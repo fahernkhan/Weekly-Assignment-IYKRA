@@ -7,3 +7,6 @@ jdbc:postgresql://google/datafolks?cloudSqlInstance=datahubpsql&socketFactory=co
 jdbc:postgresql://google/postgres?cloudSqlInstance=banksim-artificial-weekly1&socketFactory=com.google.cloud.sql.postgres.SocketFactory&user=postgres&password=password123
 
 jdbc:postgresql://34.101.116.239/postgres?user=postgres&password=password123&connectTimeout=60&socketTimeout=600
+# posgresql
+
+jdbc:postgresql:///postgres?socketFactory=com.google.cloud.sql.postgres.SocketFactory&cloudSqlInstance=iconic-indexer-418610:us-central1:postgres&user=postgres&password=password123
