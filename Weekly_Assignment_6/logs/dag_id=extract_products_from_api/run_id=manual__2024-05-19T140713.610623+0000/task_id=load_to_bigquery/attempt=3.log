@@ -1,0 +1,50 @@
+[2024-05-19T14:17:36.608+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-19T14:17:36.634+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: extract_products_from_api.load_to_bigquery manual__2024-05-19T14:07:13.610623+00:00 [queued]>
+[2024-05-19T14:17:36.646+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: extract_products_from_api.load_to_bigquery manual__2024-05-19T14:07:13.610623+00:00 [queued]>
+[2024-05-19T14:17:36.647+0000] {taskinstance.py:2306} INFO - Starting attempt 3 of 4
+[2024-05-19T14:17:36.674+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load_to_bigquery> on 2024-05-19 14:07:13.610623+00:00
+[2024-05-19T14:17:36.682+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=634) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-19T14:17:36.684+0000] {standard_task_runner.py:63} INFO - Started process 636 to run task
+[2024-05-19T14:17:36.685+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'extract_products_from_api', 'load_to_bigquery', 'manual__2024-05-19T14:07:13.610623+00:00', '--job-id', '1920', '--raw', '--subdir', 'DAGS_FOLDER/dummyjson_product.py', '--cfg-path', '/tmp/tmpa9bbvals']
+[2024-05-19T14:17:36.688+0000] {standard_task_runner.py:91} INFO - Job 1920: Subtask load_to_bigquery
+[2024-05-19T14:17:36.766+0000] {task_command.py:426} INFO - Running <TaskInstance: extract_products_from_api.load_to_bigquery manual__2024-05-19T14:07:13.610623+00:00 [running]> on host ca927d78a9ea
+[2024-05-19T14:17:36.954+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='your_email@example.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='extract_products_from_api' AIRFLOW_CTX_TASK_ID='load_to_bigquery' AIRFLOW_CTX_EXECUTION_DATE='2024-05-19T14:07:13.610623+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-19T14:07:13.610623+00:00'
+[2024-05-19T14:17:36.957+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-19T14:17:36.959+0000] {baseoperator.py:399} WARNING - GCSToBigQueryOperator.execute cannot be called outside TaskInstance!
+[2024-05-19T14:17:37.294+0000] {connection.py:274} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-05-19T14:17:37.302+0000] {base.py:84} INFO - Using connection ID '***GCP' for task execution.
+[2024-05-19T14:17:37.304+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-19T14:17:37.305+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/dummyjson_product.py", line 81, in gcs_to_bigquery
+    return task.execute(context=None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/google/cloud/transfers/gcs_to_bigquery.py", line 335, in execute
+    logical_date=context["logical_date"],
+                 ~~~~~~~^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+[2024-05-19T14:17:37.326+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=extract_products_from_api, task_id=load_to_bigquery, run_id=manual__2024-05-19T14:07:13.610623+00:00, execution_date=20240519T140713, start_date=20240519T141736, end_date=20240519T141737
+[2024-05-19T14:17:37.352+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 1920 for task load_to_bigquery ('NoneType' object is not subscriptable; 636)
+[2024-05-19T14:17:37.391+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-05-19T14:17:37.425+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-19T14:17:37.428+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

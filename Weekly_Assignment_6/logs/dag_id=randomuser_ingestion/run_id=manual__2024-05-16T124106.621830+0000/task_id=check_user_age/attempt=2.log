@@ -1,0 +1,24 @@
+[2024-05-16T13:32:15.132+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-16T13:32:15.155+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: randomuser_ingestion.check_user_age manual__2024-05-16T12:41:06.621830+00:00 [queued]>
+[2024-05-16T13:32:15.167+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: randomuser_ingestion.check_user_age manual__2024-05-16T12:41:06.621830+00:00 [queued]>
+[2024-05-16T13:32:15.168+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2024-05-16T13:32:15.190+0000] {taskinstance.py:2330} INFO - Executing <Task(BranchPythonOperator): check_user_age> on 2024-05-16 12:41:06.621830+00:00
+[2024-05-16T13:32:15.199+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=3456) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-16T13:32:15.203+0000] {standard_task_runner.py:63} INFO - Started process 3458 to run task
+[2024-05-16T13:32:15.203+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'randomuser_ingestion', 'check_user_age', 'manual__2024-05-16T12:41:06.621830+00:00', '--job-id', '1114', '--raw', '--subdir', 'DAGS_FOLDER/randomuser_ingestion.py', '--cfg-path', '/tmp/tmp676s06rg']
+[2024-05-16T13:32:15.207+0000] {standard_task_runner.py:91} INFO - Job 1114: Subtask check_user_age
+[2024-05-16T13:32:15.271+0000] {task_command.py:426} INFO - Running <TaskInstance: randomuser_ingestion.check_user_age manual__2024-05-16T12:41:06.621830+00:00 [running]> on host 8d1d9b6df744
+[2024-05-16T13:32:15.466+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='randomuser_ingestion' AIRFLOW_CTX_TASK_ID='check_user_age' AIRFLOW_CTX_EXECUTION_DATE='2024-05-16T12:41:06.621830+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-16T12:41:06.621830+00:00'
+[2024-05-16T13:32:15.469+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-16T13:32:15.470+0000] {baseoperator.py:399} WARNING - BranchPythonOperator.execute cannot be called outside TaskInstance!
+[2024-05-16T13:32:15.486+0000] {python.py:237} INFO - Done. Returned value was: store_user_group_a
+[2024-05-16T13:32:15.487+0000] {branch.py:36} INFO - Branch into store_user_group_a
+[2024-05-16T13:32:15.488+0000] {skipmixin.py:178} INFO - Following branch store_user_group_a
+[2024-05-16T13:32:15.520+0000] {skipmixin.py:246} INFO - Skipping tasks [('store_user_group_b', -1)]
+[2024-05-16T13:32:15.625+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-16T13:32:15.698+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=randomuser_ingestion, task_id=check_user_age, run_id=manual__2024-05-16T12:41:06.621830+00:00, execution_date=20240516T124106, start_date=20240516T133215, end_date=20240516T133215
+[2024-05-16T13:32:15.780+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-16T13:32:15.842+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-16T13:32:15.847+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

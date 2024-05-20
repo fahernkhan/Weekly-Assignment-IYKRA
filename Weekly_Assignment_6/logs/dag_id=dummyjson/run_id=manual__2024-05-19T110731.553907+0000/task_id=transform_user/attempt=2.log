@@ -1,0 +1,20 @@
+[2024-05-19T11:13:30.263+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-19T11:13:30.306+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dummyjson.transform_user manual__2024-05-19T11:07:31.553907+00:00 [queued]>
+[2024-05-19T11:13:30.328+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dummyjson.transform_user manual__2024-05-19T11:07:31.553907+00:00 [queued]>
+[2024-05-19T11:13:30.329+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 6
+[2024-05-19T11:13:30.370+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_user> on 2024-05-19 11:07:31.553907+00:00
+[2024-05-19T11:13:30.384+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=2431) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-19T11:13:30.389+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dummyjson', 'transform_user', 'manual__2024-05-19T11:07:31.553907+00:00', '--job-id', '1441', '--raw', '--subdir', 'DAGS_FOLDER/dummyjson.py', '--cfg-path', '/tmp/tmp7in83nyr']
+[2024-05-19T11:13:30.392+0000] {standard_task_runner.py:91} INFO - Job 1441: Subtask transform_user
+[2024-05-19T11:13:30.391+0000] {standard_task_runner.py:63} INFO - Started process 2462 to run task
+[2024-05-19T11:13:30.556+0000] {task_command.py:426} INFO - Running <TaskInstance: dummyjson.transform_user manual__2024-05-19T11:07:31.553907+00:00 [running]> on host ca927d78a9ea
+[2024-05-19T11:13:31.313+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='fathurrahmanhernanda@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dummyjson' AIRFLOW_CTX_TASK_ID='transform_user' AIRFLOW_CTX_EXECUTION_DATE='2024-05-19T11:07:31.553907+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-19T11:07:31.553907+00:00'
+[2024-05-19T11:13:31.314+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-19T11:13:31.364+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-19T11:13:31.365+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-19T11:13:31.382+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dummyjson, task_id=transform_user, run_id=manual__2024-05-19T11:07:31.553907+00:00, execution_date=20240519T110731, start_date=20240519T111330, end_date=20240519T111331
+[2024-05-19T11:13:31.432+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-19T11:13:31.518+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-19T11:13:31.541+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,22 @@
+[2024-05-19T15:17:09.499+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-19T15:17:09.574+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dummyjson.is_post_api_available scheduled__2024-05-17T17:00:00+00:00 [queued]>
+[2024-05-19T15:17:09.604+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dummyjson.is_post_api_available scheduled__2024-05-17T17:00:00+00:00 [queued]>
+[2024-05-19T15:17:09.609+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-05-19T15:17:09.666+0000] {taskinstance.py:2330} INFO - Executing <Task(HttpSensor): is_post_api_available> on 2024-05-17 17:00:00+00:00
+[2024-05-19T15:17:09.714+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dummyjson', 'is_post_api_available', 'scheduled__2024-05-17T17:00:00+00:00', '--job-id', '1946', '--raw', '--subdir', 'DAGS_FOLDER/dummyjson.py', '--cfg-path', '/tmp/tmpzp80m2fx']
+[2024-05-19T15:17:09.705+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1430) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-19T15:17:09.721+0000] {standard_task_runner.py:91} INFO - Job 1946: Subtask is_post_api_available
+[2024-05-19T15:17:09.721+0000] {standard_task_runner.py:63} INFO - Started process 1447 to run task
+[2024-05-19T15:17:10.047+0000] {task_command.py:426} INFO - Running <TaskInstance: dummyjson.is_post_api_available scheduled__2024-05-17T17:00:00+00:00 [running]> on host ca927d78a9ea
+[2024-05-19T15:17:11.948+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='fathurrahmanhernanda@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dummyjson' AIRFLOW_CTX_TASK_ID='is_post_api_available' AIRFLOW_CTX_EXECUTION_DATE='2024-05-17T17:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-05-17T17:00:00+00:00'
+[2024-05-19T15:17:11.956+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-19T15:17:11.970+0000] {baseoperator.py:399} WARNING - HttpSensor.execute cannot be called outside TaskInstance!
+[2024-05-19T15:17:11.974+0000] {http.py:137} INFO - Poking: /posts/
+[2024-05-19T15:17:12.241+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-19T15:17:14.125+0000] {base.py:294} INFO - Success criteria met. Exiting.
+[2024-05-19T15:17:14.128+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-19T15:17:14.152+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dummyjson, task_id=is_post_api_available, run_id=scheduled__2024-05-17T17:00:00+00:00, execution_date=20240517T170000, start_date=20240519T151709, end_date=20240519T151714
+[2024-05-19T15:17:14.262+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-19T15:17:14.309+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

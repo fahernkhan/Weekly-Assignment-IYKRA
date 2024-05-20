@@ -1,0 +1,24 @@
+[2024-05-19T10:13:23.307+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-19T10:13:23.366+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dummyjson.gcs_to_bigquery_todo manual__2024-05-19T10:12:02.912276+00:00 [queued]>
+[2024-05-19T10:13:23.397+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dummyjson.gcs_to_bigquery_todo manual__2024-05-19T10:12:02.912276+00:00 [queued]>
+[2024-05-19T10:13:23.399+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-05-19T10:13:23.443+0000] {taskinstance.py:2330} INFO - Executing <Task(GCSToBigQueryOperator): gcs_to_bigquery_todo> on 2024-05-19 10:12:02.912276+00:00
+[2024-05-19T10:13:23.461+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1542) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-19T10:13:23.464+0000] {standard_task_runner.py:63} INFO - Started process 1550 to run task
+[2024-05-19T10:13:23.471+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dummyjson', 'gcs_to_bigquery_todo', 'manual__2024-05-19T10:12:02.912276+00:00', '--job-id', '1379', '--raw', '--subdir', 'DAGS_FOLDER/dummyjson.py', '--cfg-path', '/tmp/tmpgb840f95']
+[2024-05-19T10:13:23.475+0000] {standard_task_runner.py:91} INFO - Job 1379: Subtask gcs_to_bigquery_todo
+[2024-05-19T10:13:23.646+0000] {task_command.py:426} INFO - Running <TaskInstance: dummyjson.gcs_to_bigquery_todo manual__2024-05-19T10:12:02.912276+00:00 [running]> on host ca927d78a9ea
+[2024-05-19T10:13:24.548+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='fathurrahmanhernanda@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dummyjson' AIRFLOW_CTX_TASK_ID='gcs_to_bigquery_todo' AIRFLOW_CTX_EXECUTION_DATE='2024-05-19T10:12:02.912276+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-19T10:12:02.912276+00:00'
+[2024-05-19T10:13:24.556+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-19T10:13:24.586+0000] {connection.py:274} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-05-19T10:13:24.595+0000] {base.py:84} INFO - Using connection ID '***GCP' for task execution.
+[2024-05-19T10:13:24.598+0000] {gcs_to_bigquery.py:380} INFO - Using existing BigQuery table for storing data...
+[2024-05-19T10:13:24.711+0000] {gcs_to_bigquery.py:384} INFO - Executing: {'load': {'autodetect': True, 'createDisposition': 'CREATE_IF_NEEDED', 'destinationTable': {'projectId': 'iconic-indexer-418610', 'datasetId': 'weekly_assignment_6', 'tableId': 'todos'}, 'sourceFormat': 'CSV', 'sourceUris': ['gs://weekly-assignment-6/todos.csv'], 'writeDisposition': 'WRITE_TRUNCATE', 'ignoreUnknownValues': False, 'schema': {'fields': [{'name': 'todo_id', 'type': 'STRING', 'mode': 'NULLABLE'}, {'name': 'todo', 'type': 'STRING', 'mode': 'NULLABLE'}, {'name': 'completed', 'type': 'BOOLEAN', 'mode': 'NULLABLE'}, {'name': 'user_id', 'type': 'STRING', 'mode': 'NULLABLE'}]}, 'skipLeadingRows': 1, 'fieldDelimiter': ',', 'quote': None, 'allowQuotedNewlines': False, 'encoding': 'UTF-8'}}
+[2024-05-19T10:13:24.714+0000] {bigquery.py:1660} INFO - Inserting job ***_dummyjson_gcs_to_bigquery_todo_2024_05_19T10_12_02_912276_00_00_3eafcb0ea54ce4cdb4efa9028911539b
+[2024-05-19T10:13:28.951+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-19T10:13:28.992+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dummyjson, task_id=gcs_to_bigquery_todo, run_id=manual__2024-05-19T10:12:02.912276+00:00, execution_date=20240519T101202, start_date=20240519T101323, end_date=20240519T101328
+[2024-05-19T10:13:29.141+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-19T10:13:29.185+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-19T10:13:29.194+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

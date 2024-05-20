@@ -1,0 +1,21 @@
+[2024-05-19T11:12:41.847+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-19T11:12:41.901+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dummyjson.extract_todo manual__2024-05-19T11:12:27.201988+00:00 [queued]>
+[2024-05-19T11:12:41.922+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dummyjson.extract_todo manual__2024-05-19T11:12:27.201988+00:00 [queued]>
+[2024-05-19T11:12:41.924+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-05-19T11:12:41.977+0000] {taskinstance.py:2330} INFO - Executing <Task(SimpleHttpOperator): extract_todo> on 2024-05-19 11:12:27.201988+00:00
+[2024-05-19T11:12:41.999+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=2373) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-19T11:12:42.004+0000] {standard_task_runner.py:63} INFO - Started process 2383 to run task
+[2024-05-19T11:12:42.003+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dummyjson', 'extract_todo', 'manual__2024-05-19T11:12:27.201988+00:00', '--job-id', '1419', '--raw', '--subdir', 'DAGS_FOLDER/dummyjson.py', '--cfg-path', '/tmp/tmpkgnxdozn']
+[2024-05-19T11:12:42.009+0000] {standard_task_runner.py:91} INFO - Job 1419: Subtask extract_todo
+[2024-05-19T11:12:42.163+0000] {task_command.py:426} INFO - Running <TaskInstance: dummyjson.extract_todo manual__2024-05-19T11:12:27.201988+00:00 [running]> on host ca927d78a9ea
+[2024-05-19T11:12:42.810+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='fathurrahmanhernanda@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dummyjson' AIRFLOW_CTX_TASK_ID='extract_todo' AIRFLOW_CTX_EXECUTION_DATE='2024-05-19T11:12:27.201988+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-19T11:12:27.201988+00:00'
+[2024-05-19T11:12:42.811+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-19T11:12:42.812+0000] {http.py:169} INFO - Calling HTTP method
+[2024-05-19T11:12:42.824+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-19T11:12:42.833+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-19T11:12:44.897+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-19T11:12:44.978+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dummyjson, task_id=extract_todo, run_id=manual__2024-05-19T11:12:27.201988+00:00, execution_date=20240519T111227, start_date=20240519T111241, end_date=20240519T111244
+[2024-05-19T11:12:45.079+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-19T11:12:45.113+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,25 @@
+[2024-05-18T15:28:56.559+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-18T15:28:56.599+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: randomuser_ingestion.extract_user manual__2024-05-18T15:28:45.688297+00:00 [queued]>
+[2024-05-18T15:28:56.629+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: randomuser_ingestion.extract_user manual__2024-05-18T15:28:45.688297+00:00 [queued]>
+[2024-05-18T15:28:56.630+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-18T15:28:56.674+0000] {taskinstance.py:2330} INFO - Executing <Task(SimpleHttpOperator): extract_user> on 2024-05-18 15:28:45.688297+00:00
+[2024-05-18T15:28:56.702+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=832) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-18T15:28:56.715+0000] {standard_task_runner.py:63} INFO - Started process 834 to run task
+[2024-05-18T15:28:56.709+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'randomuser_ingestion', 'extract_user', 'manual__2024-05-18T15:28:45.688297+00:00', '--job-id', '1149', '--raw', '--subdir', 'DAGS_FOLDER/randomuser_ingestion.py', '--cfg-path', '/tmp/tmpi_uoc2us']
+[2024-05-18T15:28:56.724+0000] {standard_task_runner.py:91} INFO - Job 1149: Subtask extract_user
+[2024-05-18T15:28:56.954+0000] {task_command.py:426} INFO - Running <TaskInstance: randomuser_ingestion.extract_user manual__2024-05-18T15:28:45.688297+00:00 [running]> on host 8d1d9b6df744
+[2024-05-18T15:28:57.255+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='randomuser_ingestion' AIRFLOW_CTX_TASK_ID='extract_user' AIRFLOW_CTX_EXECUTION_DATE='2024-05-18T15:28:45.688297+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-18T15:28:45.688297+00:00'
+[2024-05-18T15:28:57.259+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-18T15:28:57.260+0000] {http.py:169} INFO - Calling HTTP method
+[2024-05-18T15:28:57.277+0000] {base.py:84} INFO - Using connection ID 'randomuser_api' for task execution.
+[2024-05-18T15:28:57.291+0000] {base.py:84} INFO - Using connection ID 'randomuser_api' for task execution.
+[2024-05-18T15:28:58.198+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-18T15:28:58.233+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=randomuser_ingestion, task_id=extract_user, run_id=manual__2024-05-18T15:28:45.688297+00:00, execution_date=20240518T152845, start_date=20240518T152856, end_date=20240518T152858
+[2024-05-18T15:28:58.300+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-18T15:28:58.315+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/models/baseoperator.py:1296: AirflowProviderDeprecationWarning: Call to deprecated class SimpleHttpOperator. (Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.)
+  result = cls.__new__(cls)
+
+[2024-05-18T15:28:58.342+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-18T15:28:58.346+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

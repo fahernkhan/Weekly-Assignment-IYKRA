@@ -1,0 +1,24 @@
+[2024-05-19T15:23:55.792+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-19T15:23:55.978+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dummyjson.gcs_to_bigquery_post scheduled__2024-05-17T17:00:00+00:00 [queued]>
+[2024-05-19T15:23:56.059+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dummyjson.gcs_to_bigquery_post scheduled__2024-05-17T17:00:00+00:00 [queued]>
+[2024-05-19T15:23:56.060+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-05-19T15:23:56.111+0000] {taskinstance.py:2330} INFO - Executing <Task(GCSToBigQueryOperator): gcs_to_bigquery_post> on 2024-05-17 17:00:00+00:00
+[2024-05-19T15:23:56.128+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1812) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-19T15:23:56.131+0000] {standard_task_runner.py:63} INFO - Started process 1827 to run task
+[2024-05-19T15:23:56.137+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dummyjson', 'gcs_to_bigquery_post', 'scheduled__2024-05-17T17:00:00+00:00', '--job-id', '2044', '--raw', '--subdir', 'DAGS_FOLDER/dummyjson.py', '--cfg-path', '/tmp/tmp9zdyp1cq']
+[2024-05-19T15:23:56.150+0000] {standard_task_runner.py:91} INFO - Job 2044: Subtask gcs_to_bigquery_post
+[2024-05-19T15:23:56.346+0000] {task_command.py:426} INFO - Running <TaskInstance: dummyjson.gcs_to_bigquery_post scheduled__2024-05-17T17:00:00+00:00 [running]> on host ca927d78a9ea
+[2024-05-19T15:23:57.183+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='fathurrahmanhernanda@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dummyjson' AIRFLOW_CTX_TASK_ID='gcs_to_bigquery_post' AIRFLOW_CTX_EXECUTION_DATE='2024-05-17T17:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-05-17T17:00:00+00:00'
+[2024-05-19T15:23:57.185+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-19T15:23:57.208+0000] {connection.py:274} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-05-19T15:23:57.221+0000] {base.py:84} INFO - Using connection ID '***GCP' for task execution.
+[2024-05-19T15:23:57.224+0000] {gcs_to_bigquery.py:380} INFO - Using existing BigQuery table for storing data...
+[2024-05-19T15:23:57.343+0000] {gcs_to_bigquery.py:384} INFO - Executing: {'load': {'autodetect': True, 'createDisposition': 'CREATE_IF_NEEDED', 'destinationTable': {'projectId': 'iconic-indexer-418610', 'datasetId': 'weekly_assignment_6', 'tableId': 'posts'}, 'sourceFormat': 'CSV', 'sourceUris': ['gs://weekly-assignment-6/posts.csv'], 'writeDisposition': 'WRITE_TRUNCATE', 'ignoreUnknownValues': False, 'schema': {'fields': [{'name': 'postID', 'type': 'STRING', 'mode': 'NULLABLE'}, {'name': 'title', 'type': 'STRING', 'mode': 'NULLABLE'}, {'name': 'body', 'type': 'STRING', 'mode': 'NULLABLE'}, {'name': 'userID', 'type': 'STRING', 'mode': 'NULLABLE'}, {'name': 'tags', 'type': 'STRING', 'mode': 'NULLABLE'}, {'name': 'reactions', 'type': 'INTEGER', 'mode': 'NULLABLE'}]}, 'skipLeadingRows': 1, 'fieldDelimiter': ',', 'quote': None, 'allowQuotedNewlines': False, 'encoding': 'UTF-8'}}
+[2024-05-19T15:23:57.389+0000] {bigquery.py:1660} INFO - Inserting job ***_dummyjson_gcs_to_bigquery_post_2024_05_17T17_00_00_00_00_a0937ec6eb96727ffdc20b29b3db55b2
+[2024-05-19T15:24:00.666+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-19T15:24:00.696+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dummyjson, task_id=gcs_to_bigquery_post, run_id=scheduled__2024-05-17T17:00:00+00:00, execution_date=20240517T170000, start_date=20240519T152355, end_date=20240519T152400
+[2024-05-19T15:24:00.827+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-19T15:24:00.885+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-19T15:24:00.897+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

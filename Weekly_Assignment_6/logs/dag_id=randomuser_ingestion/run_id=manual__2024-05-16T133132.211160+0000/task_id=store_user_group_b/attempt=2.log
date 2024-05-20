@@ -1,0 +1,20 @@
+[2024-05-16T13:41:01.935+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-16T13:41:01.967+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: randomuser_ingestion.store_user_group_b manual__2024-05-16T13:31:32.211160+00:00 [queued]>
+[2024-05-16T13:41:01.984+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: randomuser_ingestion.store_user_group_b manual__2024-05-16T13:31:32.211160+00:00 [queued]>
+[2024-05-16T13:41:01.985+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2024-05-16T13:41:02.006+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): store_user_group_b> on 2024-05-16 13:31:32.211160+00:00
+[2024-05-16T13:41:02.014+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=3585) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-16T13:41:02.017+0000] {standard_task_runner.py:63} INFO - Started process 3587 to run task
+[2024-05-16T13:41:02.017+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'randomuser_ingestion', 'store_user_group_b', 'manual__2024-05-16T13:31:32.211160+00:00', '--job-id', '1122', '--raw', '--subdir', 'DAGS_FOLDER/randomuser_ingestion.py', '--cfg-path', '/tmp/tmpyao7wkdj']
+[2024-05-16T13:41:02.022+0000] {standard_task_runner.py:91} INFO - Job 1122: Subtask store_user_group_b
+[2024-05-16T13:41:02.096+0000] {task_command.py:426} INFO - Running <TaskInstance: randomuser_ingestion.store_user_group_b manual__2024-05-16T13:31:32.211160+00:00 [running]> on host 8d1d9b6df744
+[2024-05-16T13:41:02.247+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='randomuser_ingestion' AIRFLOW_CTX_TASK_ID='store_user_group_b' AIRFLOW_CTX_EXECUTION_DATE='2024-05-16T13:31:32.211160+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-16T13:31:32.211160+00:00'
+[2024-05-16T13:41:02.250+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-16T13:41:02.272+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-16T13:41:02.274+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-16T13:41:02.289+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=randomuser_ingestion, task_id=store_user_group_b, run_id=manual__2024-05-16T13:31:32.211160+00:00, execution_date=20240516T133132, start_date=20240516T134101, end_date=20240516T134102
+[2024-05-16T13:41:02.354+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-16T13:41:02.393+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-16T13:41:02.397+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

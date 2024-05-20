@@ -1,0 +1,1 @@
+[2024-05-19T04:33:49.451+0000] {task_context_logger.py:104} ERROR - Executor reports task instance <TaskInstance: dummyjson_ingestion.is_api_available manual__2024-05-19T04:33:48.597880+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

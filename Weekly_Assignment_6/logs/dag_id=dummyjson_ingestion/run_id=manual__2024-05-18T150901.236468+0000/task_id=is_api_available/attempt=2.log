@@ -1,0 +1,451 @@
+[2024-05-18T15:15:08.719+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-18T15:15:08.740+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dummyjson_ingestion.is_api_available manual__2024-05-18T15:09:01.236468+00:00 [queued]>
+[2024-05-18T15:15:08.749+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dummyjson_ingestion.is_api_available manual__2024-05-18T15:09:01.236468+00:00 [queued]>
+[2024-05-18T15:15:08.751+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 1
+[2024-05-18T15:15:08.770+0000] {taskinstance.py:2330} INFO - Executing <Task(HttpSensor): is_api_available> on 2024-05-18 15:09:01.236468+00:00
+[2024-05-18T15:15:08.779+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=658) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-18T15:15:08.782+0000] {standard_task_runner.py:63} INFO - Started process 660 to run task
+[2024-05-18T15:15:08.781+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dummyjson_ingestion', 'is_api_available', 'manual__2024-05-18T15:09:01.236468+00:00', '--job-id', '1147', '--raw', '--subdir', 'DAGS_FOLDER/weekly_assignment.py', '--cfg-path', '/tmp/tmpuymf74j7']
+[2024-05-18T15:15:08.784+0000] {standard_task_runner.py:91} INFO - Job 1147: Subtask is_api_available
+[2024-05-18T15:15:08.864+0000] {task_command.py:426} INFO - Running <TaskInstance: dummyjson_ingestion.is_api_available manual__2024-05-18T15:09:01.236468+00:00 [running]> on host 8d1d9b6df744
+[2024-05-18T15:15:08.991+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dummyjson_ingestion' AIRFLOW_CTX_TASK_ID='is_api_available' AIRFLOW_CTX_EXECUTION_DATE='2024-05-18T15:09:01.236468+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-18T15:09:01.236468+00:00'
+[2024-05-18T15:15:08.994+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-18T15:15:08.995+0000] {baseoperator.py:399} WARNING - HttpSensor.execute cannot be called outside TaskInstance!
+[2024-05-18T15:15:08.996+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:15:09.012+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:15:09.628+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:15:09.629+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:16:09.631+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:16:09.643+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:16:10.273+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:16:10.274+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:17:10.277+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:17:10.287+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:17:10.929+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:17:10.930+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:18:10.933+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:18:10.943+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:18:11.558+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:18:11.559+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:19:11.561+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:19:11.572+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:19:12.213+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:19:12.213+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:20:12.215+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:20:12.225+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:20:13.409+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:20:13.410+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:21:13.413+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:21:13.438+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:21:14.054+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:21:14.055+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:22:14.054+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:22:14.068+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:22:14.695+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:22:14.696+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:23:14.706+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:23:14.721+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:23:15.967+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:23:15.967+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:24:15.970+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:24:15.993+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:24:16.601+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:24:16.602+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:25:16.604+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:25:16.613+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:25:17.237+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:25:17.238+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:26:17.241+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:26:17.257+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:26:17.878+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:26:17.879+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:27:17.882+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:27:17.892+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:27:18.617+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:27:18.618+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:28:18.621+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:28:18.634+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:28:19.280+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:28:19.281+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:29:19.284+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:29:19.293+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:29:19.901+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:29:19.902+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:30:19.904+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:30:19.914+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:30:20.635+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:30:20.636+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:31:20.639+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:31:20.651+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:31:21.326+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:31:21.327+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:32:21.330+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:32:21.361+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:32:21.986+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:32:21.987+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:33:21.990+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:33:22.016+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:33:22.875+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:33:22.876+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:34:22.878+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:34:22.887+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:34:24.337+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:34:24.338+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:35:24.336+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:35:24.346+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:35:26.564+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:35:26.566+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:36:26.577+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:36:26.590+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:36:27.842+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:36:27.843+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:37:27.845+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:37:27.857+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:37:28.960+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:37:28.961+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:38:28.964+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:38:28.975+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:38:29.742+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:38:29.743+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:39:29.745+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:39:29.754+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:39:30.537+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:39:30.537+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:40:30.539+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:40:30.554+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:40:32.217+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:40:32.218+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:41:32.221+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:41:32.233+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:41:34.427+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:41:34.428+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:42:34.430+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:42:34.447+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:42:35.081+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:42:35.082+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:43:35.086+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:43:35.095+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:43:35.742+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:43:35.744+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:44:35.745+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:44:35.756+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:44:36.394+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:44:36.397+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:45:36.403+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:45:36.413+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:45:37.028+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:45:37.029+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:46:37.031+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:46:37.043+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:46:37.654+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:46:37.655+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:47:37.659+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:47:37.667+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:47:38.678+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:47:38.679+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:48:38.682+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:48:38.693+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:48:39.319+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:48:39.320+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:49:39.321+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:49:39.332+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:49:39.950+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:49:39.951+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:50:39.954+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:50:39.964+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:50:41.711+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:50:41.712+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:51:41.714+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:51:41.727+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:51:42.376+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:51:42.377+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:52:42.380+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:52:42.395+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:52:43.224+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:52:43.225+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:53:43.229+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:53:43.242+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:53:44.086+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:53:44.087+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:54:44.088+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:54:44.106+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:54:44.943+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:54:44.944+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:55:44.947+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:55:44.960+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:55:45.929+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:55:45.930+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:56:45.932+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:56:45.943+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:56:47.078+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:56:47.079+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:57:47.082+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:57:47.105+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:57:48.009+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:57:48.010+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:58:48.014+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:58:48.026+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:58:49.945+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:58:49.945+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:59:49.950+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:59:49.961+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:59:50.614+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:59:50.615+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:00:50.619+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:00:50.651+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:00:51.517+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:00:51.518+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:01:51.523+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:01:51.558+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:01:52.694+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:01:52.694+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:02:52.697+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:02:52.715+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:02:53.481+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:02:53.482+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:03:53.486+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:03:53.495+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:03:54.132+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:03:54.133+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:04:54.136+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:04:54.146+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:04:54.759+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:04:54.760+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:05:54.764+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:05:54.794+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:05:55.954+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:05:55.955+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:06:55.958+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:06:55.969+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:06:56.578+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:06:56.579+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:07:56.581+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:07:56.592+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:07:57.217+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:07:57.218+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:08:57.221+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:08:57.231+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:08:57.965+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:08:57.966+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:09:57.971+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:09:57.980+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:09:59.169+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:09:59.170+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:10:59.172+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:10:59.182+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:10:59.893+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:10:59.894+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:11:59.897+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:11:59.907+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:12:00.531+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:12:00.532+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:13:00.535+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:13:00.547+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:13:01.287+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:13:01.288+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:14:01.290+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:14:01.300+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:14:01.927+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:14:01.928+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:15:01.930+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:15:01.939+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:15:02.545+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:15:02.546+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:16:02.549+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:16:02.561+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:16:03.396+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:16:03.397+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:17:03.400+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:17:03.409+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:17:04.012+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:17:04.013+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:18:04.015+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:18:04.039+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:18:04.666+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:18:04.666+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:19:04.669+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:19:04.689+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:19:05.301+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:19:05.304+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:20:05.310+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:20:05.328+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:20:05.960+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:20:05.961+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:21:05.964+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:21:05.976+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:21:06.601+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:21:06.602+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:22:06.606+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:22:06.616+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:22:07.253+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:22:07.255+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:23:07.259+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:23:07.269+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:23:07.876+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:23:07.877+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:24:07.881+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:24:07.892+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:24:08.541+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:24:08.542+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:25:08.545+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:25:08.556+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:25:09.166+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:25:09.168+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:26:09.176+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:26:09.186+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:26:09.796+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:26:09.797+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:27:09.800+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:27:09.814+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:27:10.428+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:27:10.430+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:28:10.439+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:28:10.452+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:28:11.064+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:28:11.065+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:29:11.067+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:29:11.077+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:29:11.709+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:29:11.710+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:30:11.720+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:30:11.731+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:30:12.460+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:30:12.461+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:31:12.465+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:31:12.474+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:31:13.085+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:31:13.085+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:32:13.090+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:32:13.099+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:32:13.824+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:32:13.825+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:33:13.828+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:33:13.842+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:33:14.483+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:33:14.483+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:34:14.488+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:34:14.497+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:34:16.114+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:34:16.115+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:35:16.119+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:35:16.142+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:35:16.749+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:35:16.750+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:36:16.752+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:36:16.763+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:36:17.384+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:36:17.384+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:37:17.386+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:37:17.399+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:37:18.102+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:37:18.104+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:38:18.110+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:38:18.130+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:38:19.771+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:38:19.772+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:39:19.775+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:39:19.785+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:39:20.410+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:39:20.411+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:40:20.413+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:40:20.438+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:40:21.059+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:40:21.060+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:41:21.064+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:41:21.092+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:41:21.735+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:41:21.737+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:42:21.758+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:42:21.767+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:42:22.386+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:42:22.388+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:43:22.384+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:43:22.396+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:43:23.042+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:43:23.043+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:44:23.043+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:44:23.054+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:44:23.691+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:44:23.692+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:45:23.693+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:45:23.726+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:45:24.381+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:45:24.382+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:46:24.385+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:46:24.397+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:46:25.050+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:46:25.052+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:47:25.062+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:47:25.080+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:47:25.726+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:47:25.727+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:48:25.729+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:48:25.739+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:48:27.592+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:48:27.593+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:49:27.596+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:49:27.611+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:49:28.272+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:49:28.273+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:50:28.275+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:50:28.293+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:50:29.008+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:50:29.008+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:51:29.011+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:51:29.020+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:51:30.755+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:51:30.757+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:52:30.765+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:52:30.776+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:52:31.406+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:52:31.407+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:53:31.410+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:53:31.421+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:53:32.213+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:53:32.214+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:54:32.217+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:54:32.229+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:54:32.952+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:54:32.953+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:55:32.956+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:55:32.981+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:55:33.593+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:55:33.593+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:56:33.596+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:56:33.624+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:56:34.383+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:56:34.384+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:57:34.387+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:57:34.399+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:57:35.014+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:57:35.017+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:58:35.019+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:58:35.041+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:58:35.823+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:58:35.824+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:59:35.827+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:59:35.837+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:59:36.458+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:59:36.460+0000] {http.py:200} ERROR - not found!
+[2024-05-18T17:00:36.466+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T17:00:36.484+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T17:00:37.225+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T17:00:37.226+0000] {http.py:200} ERROR - not found!
+[2024-05-18T17:01:37.229+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T17:01:37.239+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T17:01:37.846+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T17:01:37.846+0000] {http.py:200} ERROR - not found!
+[2024-05-18T17:02:37.849+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T17:02:37.860+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T17:02:38.499+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T17:02:38.501+0000] {http.py:200} ERROR - not found!
+[2024-05-18T17:03:38.512+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T17:03:38.522+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T17:03:39.135+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T17:03:39.136+0000] {http.py:200} ERROR - not found!
+[2024-05-18T17:04:39.140+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T17:04:39.150+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T17:04:39.880+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T17:04:39.880+0000] {http.py:200} ERROR - not found!

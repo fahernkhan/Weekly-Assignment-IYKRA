@@ -1,0 +1,21 @@
+[2024-05-19T09:49:24.237+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-19T09:49:24.258+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dummyjson_ingestion.write_to_csv manual__2024-05-19T09:48:52.274268+00:00 [queued]>
+[2024-05-19T09:49:24.271+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dummyjson_ingestion.write_to_csv manual__2024-05-19T09:48:52.274268+00:00 [queued]>
+[2024-05-19T09:49:24.273+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-05-19T09:49:24.294+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): write_to_csv> on 2024-05-19 09:48:52.274268+00:00
+[2024-05-19T09:49:24.303+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1160) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-19T09:49:24.306+0000] {standard_task_runner.py:63} INFO - Started process 1162 to run task
+[2024-05-19T09:49:24.306+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dummyjson_ingestion', 'write_to_csv', 'manual__2024-05-19T09:48:52.274268+00:00', '--job-id', '1349', '--raw', '--subdir', 'DAGS_FOLDER/dummyjson_ingestion.py', '--cfg-path', '/tmp/tmps1r_5_k0']
+[2024-05-19T09:49:24.308+0000] {standard_task_runner.py:91} INFO - Job 1349: Subtask write_to_csv
+[2024-05-19T09:49:24.373+0000] {task_command.py:426} INFO - Running <TaskInstance: dummyjson_ingestion.write_to_csv manual__2024-05-19T09:48:52.274268+00:00 [running]> on host ca927d78a9ea
+[2024-05-19T09:49:24.906+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='fathurrahmanhernanda@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dummyjson_ingestion' AIRFLOW_CTX_TASK_ID='write_to_csv' AIRFLOW_CTX_EXECUTION_DATE='2024-05-19T09:48:52.274268+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-19T09:48:52.274268+00:00'
+[2024-05-19T09:49:24.907+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-19T09:49:24.929+0000] {dummyjson_ingestion.py:60} INFO - CSV file has been written successfully.
+[2024-05-19T09:49:24.930+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-19T09:49:24.930+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-19T09:49:24.943+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dummyjson_ingestion, task_id=write_to_csv, run_id=manual__2024-05-19T09:48:52.274268+00:00, execution_date=20240519T094852, start_date=20240519T094924, end_date=20240519T094924
+[2024-05-19T09:49:25.004+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-19T09:49:25.049+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-19T09:49:25.052+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

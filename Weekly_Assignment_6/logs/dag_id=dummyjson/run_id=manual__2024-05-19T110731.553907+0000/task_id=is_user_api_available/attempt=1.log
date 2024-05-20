@@ -1,0 +1,26 @@
+[2024-05-19T11:07:40.434+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-19T11:07:40.489+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dummyjson.is_user_api_available manual__2024-05-19T11:07:31.553907+00:00 [queued]>
+[2024-05-19T11:07:40.514+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dummyjson.is_user_api_available manual__2024-05-19T11:07:31.553907+00:00 [queued]>
+[2024-05-19T11:07:40.515+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-05-19T11:07:40.594+0000] {taskinstance.py:2330} INFO - Executing <Task(HttpSensor): is_user_api_available> on 2024-05-19 11:07:31.553907+00:00
+[2024-05-19T11:07:40.637+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=2262) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-19T11:07:40.661+0000] {standard_task_runner.py:63} INFO - Started process 2272 to run task
+[2024-05-19T11:07:40.665+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dummyjson', 'is_user_api_available', 'manual__2024-05-19T11:07:31.553907+00:00', '--job-id', '1403', '--raw', '--subdir', 'DAGS_FOLDER/dummyjson.py', '--cfg-path', '/tmp/tmpgf02197m']
+[2024-05-19T11:07:40.669+0000] {standard_task_runner.py:91} INFO - Job 1403: Subtask is_user_api_available
+[2024-05-19T11:07:41.002+0000] {task_command.py:426} INFO - Running <TaskInstance: dummyjson.is_user_api_available manual__2024-05-19T11:07:31.553907+00:00 [running]> on host ca927d78a9ea
+[2024-05-19T11:07:42.588+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='fathurrahmanhernanda@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dummyjson' AIRFLOW_CTX_TASK_ID='is_user_api_available' AIRFLOW_CTX_EXECUTION_DATE='2024-05-19T11:07:31.553907+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-19T11:07:31.553907+00:00'
+[2024-05-19T11:07:42.596+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-19T11:07:42.598+0000] {baseoperator.py:399} WARNING - HttpSensor.execute cannot be called outside TaskInstance!
+[2024-05-19T11:07:42.600+0000] {http.py:137} INFO - Poking: /users/
+[2024-05-19T11:07:42.625+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-19T11:07:44.769+0000] {base.py:294} INFO - Success criteria met. Exiting.
+[2024-05-19T11:07:44.771+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-19T11:07:44.787+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dummyjson, task_id=is_user_api_available, run_id=manual__2024-05-19T11:07:31.553907+00:00, execution_date=20240519T110731, start_date=20240519T110740, end_date=20240519T110744
+[2024-05-19T11:07:44.869+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-19T11:07:44.890+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/models/baseoperator.py:1296: AirflowProviderDeprecationWarning: Call to deprecated class SimpleHttpOperator. (Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.)
+  result = cls.__new__(cls)
+
+[2024-05-19T11:07:44.940+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-19T11:07:44.943+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

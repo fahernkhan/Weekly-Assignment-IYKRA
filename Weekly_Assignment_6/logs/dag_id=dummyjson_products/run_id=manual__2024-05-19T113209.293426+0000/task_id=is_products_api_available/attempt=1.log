@@ -1,0 +1,22 @@
+[2024-05-19T11:32:12.812+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-19T11:32:12.838+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dummyjson_products.is_products_api_available manual__2024-05-19T11:32:09.293426+00:00 [queued]>
+[2024-05-19T11:32:12.854+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dummyjson_products.is_products_api_available manual__2024-05-19T11:32:09.293426+00:00 [queued]>
+[2024-05-19T11:32:12.855+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-05-19T11:32:12.875+0000] {taskinstance.py:2330} INFO - Executing <Task(HttpSensor): is_products_api_available> on 2024-05-19 11:32:09.293426+00:00
+[2024-05-19T11:32:12.884+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=2807) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-19T11:32:12.887+0000] {standard_task_runner.py:63} INFO - Started process 2809 to run task
+[2024-05-19T11:32:12.887+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dummyjson_products', 'is_products_api_available', 'manual__2024-05-19T11:32:09.293426+00:00', '--job-id', '1484', '--raw', '--subdir', 'DAGS_FOLDER/dummyjson_product.py', '--cfg-path', '/tmp/tmpg1rjtncc']
+[2024-05-19T11:32:12.889+0000] {standard_task_runner.py:91} INFO - Job 1484: Subtask is_products_api_available
+[2024-05-19T11:32:12.965+0000] {task_command.py:426} INFO - Running <TaskInstance: dummyjson_products.is_products_api_available manual__2024-05-19T11:32:09.293426+00:00 [running]> on host ca927d78a9ea
+[2024-05-19T11:32:13.345+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='fathurrahmanhernanda@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dummyjson_products' AIRFLOW_CTX_TASK_ID='is_products_api_available' AIRFLOW_CTX_EXECUTION_DATE='2024-05-19T11:32:09.293426+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-19T11:32:09.293426+00:00'
+[2024-05-19T11:32:13.346+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-19T11:32:13.347+0000] {baseoperator.py:399} WARNING - HttpSensor.execute cannot be called outside TaskInstance!
+[2024-05-19T11:32:13.348+0000] {http.py:137} INFO - Poking: /carts/
+[2024-05-19T11:32:13.359+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-19T11:32:14.730+0000] {base.py:294} INFO - Success criteria met. Exiting.
+[2024-05-19T11:32:14.732+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-19T11:32:14.749+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dummyjson_products, task_id=is_products_api_available, run_id=manual__2024-05-19T11:32:09.293426+00:00, execution_date=20240519T113209, start_date=20240519T113212, end_date=20240519T113214
+[2024-05-19T11:32:14.830+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-19T11:32:14.844+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,43 @@
+[2024-05-19T11:58:12.665+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-19T11:58:12.905+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dummyjson_products.transform_products scheduled__2024-05-01T00:00:00+00:00 [queued]>
+[2024-05-19T11:58:12.970+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dummyjson_products.transform_products scheduled__2024-05-01T00:00:00+00:00 [queued]>
+[2024-05-19T11:58:12.977+0000] {taskinstance.py:2306} INFO - Starting attempt 3 of 6
+[2024-05-19T11:58:13.130+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_products> on 2024-05-01 00:00:00+00:00
+[2024-05-19T11:58:13.171+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=3317) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-19T11:58:13.207+0000] {standard_task_runner.py:63} INFO - Started process 3349 to run task
+[2024-05-19T11:58:13.207+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dummyjson_products', 'transform_products', 'scheduled__2024-05-01T00:00:00+00:00', '--job-id', '1547', '--raw', '--subdir', 'DAGS_FOLDER/dummyjson_product.py', '--cfg-path', '/tmp/tmp375sw0em']
+[2024-05-19T11:58:13.221+0000] {standard_task_runner.py:91} INFO - Job 1547: Subtask transform_products
+[2024-05-19T11:58:17.874+0000] {task_command.py:426} INFO - Running <TaskInstance: dummyjson_products.transform_products scheduled__2024-05-01T00:00:00+00:00 [running]> on host ca927d78a9ea
+[2024-05-19T11:58:19.748+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='fathurrahmanhernanda@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dummyjson_products' AIRFLOW_CTX_TASK_ID='transform_products' AIRFLOW_CTX_EXECUTION_DATE='2024-05-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-05-01T00:00:00+00:00'
+[2024-05-19T11:58:19.762+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-19T11:58:19.808+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-19T11:58:19.809+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/dummyjson_product.py", line 86, in transform_generic_cart
+    response = json.loads(ti.xcom_pull(task_ids='extract_cart'))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not NoneType
+[2024-05-19T11:58:19.854+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=dummyjson_products, task_id=transform_products, run_id=scheduled__2024-05-01T00:00:00+00:00, execution_date=20240501T000000, start_date=20240519T115812, end_date=20240519T115819
+[2024-05-19T11:58:19.923+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 1547 for task transform_products (the JSON object must be str, bytes or bytearray, not NoneType; 3349)
+[2024-05-19T11:58:19.983+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-05-19T11:58:20.054+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-19T11:58:20.062+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

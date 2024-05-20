@@ -1,0 +1,59 @@
+[2024-05-16T09:59:21.754+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-16T09:59:21.801+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: randomuser_ingestion.extract_user manual__2024-05-16T09:55:50.967423+00:00 [queued]>
+[2024-05-16T09:59:21.840+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: randomuser_ingestion.extract_user manual__2024-05-16T09:55:50.967423+00:00 [queued]>
+[2024-05-16T09:59:21.841+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2024-05-16T09:59:21.886+0000] {taskinstance.py:2330} INFO - Executing <Task(SimpleHttpOperator): extract_user> on 2024-05-16 09:55:50.967423+00:00
+[2024-05-16T09:59:21.907+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=660) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-16T09:59:21.916+0000] {standard_task_runner.py:63} INFO - Started process 662 to run task
+[2024-05-16T09:59:21.911+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'randomuser_ingestion', 'extract_user', 'manual__2024-05-16T09:55:50.967423+00:00', '--job-id', '1051', '--raw', '--subdir', 'DAGS_FOLDER/randomuser_ingestion.py', '--cfg-path', '/tmp/tmprviy5bcp']
+[2024-05-16T09:59:21.923+0000] {standard_task_runner.py:91} INFO - Job 1051: Subtask extract_user
+[2024-05-16T09:59:22.065+0000] {task_command.py:426} INFO - Running <TaskInstance: randomuser_ingestion.extract_user manual__2024-05-16T09:55:50.967423+00:00 [running]> on host 8d1d9b6df744
+[2024-05-16T09:59:22.208+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='randomuser_ingestion' AIRFLOW_CTX_TASK_ID='extract_user' AIRFLOW_CTX_EXECUTION_DATE='2024-05-16T09:55:50.967423+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-16T09:55:50.967423+00:00'
+[2024-05-16T09:59:22.212+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-16T09:59:22.213+0000] {http.py:169} INFO - Calling HTTP method
+[2024-05-16T09:59:22.223+0000] {base.py:84} INFO - Using connection ID 'randomuser_api' for task execution.
+[2024-05-16T09:59:22.236+0000] {base.py:84} INFO - Using connection ID 'randomuser_api' for task execution.
+[2024-05-16T09:59:23.602+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-16T09:59:23.603+0000] {http.py:200} ERROR - Not Found
+[2024-05-16T09:59:23.604+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-16T09:59:23.619+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/hooks/http.py", line 197, in check_response
+    response.raise_for_status()
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://randomuser.me//api
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/operators/http.py", line 166, in execute
+    return self.execute_sync(context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/operators/http.py", line 170, in execute_sync
+    response = self.hook.run(self.endpoint, self.data, self.headers, self.extra_options)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/hooks/http.py", line 187, in run
+    return self.run_and_check(session, prepped_request, extra_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/hooks/http.py", line 238, in run_and_check
+    self.check_response(response)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/hooks/http.py", line 201, in check_response
+    raise AirflowException(str(response.status_code) + ":" + response.reason)
+airflow.exceptions.AirflowException: 404:Not Found
+[2024-05-16T09:59:23.628+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=randomuser_ingestion, task_id=extract_user, run_id=manual__2024-05-16T09:55:50.967423+00:00, execution_date=20240516T095550, start_date=20240516T095921, end_date=20240516T095923
+[2024-05-16T09:59:23.653+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 1051 for task extract_user (404:Not Found; 662)
+[2024-05-16T09:59:23.702+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-05-16T09:59:23.731+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-16T09:59:23.736+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

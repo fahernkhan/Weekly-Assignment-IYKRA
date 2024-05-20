@@ -1,0 +1,245 @@
+[2024-05-18T15:42:49.455+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-18T15:42:49.487+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dummyjson_ingestion.is_api_available manual__2024-05-18T15:42:45.144020+00:00 [queued]>
+[2024-05-18T15:42:49.502+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dummyjson_ingestion.is_api_available manual__2024-05-18T15:42:45.144020+00:00 [queued]>
+[2024-05-18T15:42:49.504+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-18T15:42:49.528+0000] {taskinstance.py:2330} INFO - Executing <Task(HttpSensor): is_api_available> on 2024-05-18 15:42:45.144020+00:00
+[2024-05-18T15:42:49.538+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1039) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-18T15:42:49.540+0000] {standard_task_runner.py:63} INFO - Started process 1042 to run task
+[2024-05-18T15:42:49.540+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dummyjson_ingestion', 'is_api_available', 'manual__2024-05-18T15:42:45.144020+00:00', '--job-id', '1161', '--raw', '--subdir', 'DAGS_FOLDER/dummyjson_ingestion.py', '--cfg-path', '/tmp/tmp1nbmhtmt']
+[2024-05-18T15:42:49.545+0000] {standard_task_runner.py:91} INFO - Job 1161: Subtask is_api_available
+[2024-05-18T15:42:49.630+0000] {task_command.py:426} INFO - Running <TaskInstance: dummyjson_ingestion.is_api_available manual__2024-05-18T15:42:45.144020+00:00 [running]> on host 8d1d9b6df744
+[2024-05-18T15:42:49.758+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dummyjson_ingestion' AIRFLOW_CTX_TASK_ID='is_api_available' AIRFLOW_CTX_EXECUTION_DATE='2024-05-18T15:42:45.144020+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-18T15:42:45.144020+00:00'
+[2024-05-18T15:42:49.761+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-18T15:42:49.762+0000] {baseoperator.py:399} WARNING - HttpSensor.execute cannot be called outside TaskInstance!
+[2024-05-18T15:42:49.763+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:42:49.779+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:42:50.431+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:42:50.432+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:43:50.435+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:43:50.447+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:43:51.067+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:43:51.068+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:44:51.068+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:44:51.078+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:44:51.692+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:44:51.694+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:45:51.699+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:45:51.710+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:45:52.380+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:45:52.381+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:46:52.385+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:46:52.394+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:46:53.008+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:46:53.009+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:47:53.011+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:47:53.030+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:47:53.652+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:47:53.656+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:48:53.661+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:48:53.672+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:48:54.297+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:48:54.298+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:49:54.301+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:49:54.312+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:49:56.183+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:49:56.184+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:50:56.186+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:50:56.196+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:50:56.833+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:50:56.834+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:51:56.838+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:51:56.850+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:51:57.465+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:51:57.467+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:52:57.474+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:52:57.495+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:52:58.123+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:52:58.124+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:53:58.125+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:53:58.138+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:53:58.968+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:53:58.969+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:54:58.971+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:54:58.982+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:54:59.857+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:54:59.858+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:55:59.861+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:55:59.871+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:56:00.914+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:56:00.915+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:57:00.915+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:57:00.926+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:57:01.756+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:57:01.756+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:58:01.761+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:58:01.771+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:58:03.040+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:58:03.041+0000] {http.py:200} ERROR - not found!
+[2024-05-18T15:59:03.045+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:59:03.071+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T15:59:04.169+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T15:59:04.170+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:00:04.172+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:00:04.184+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:00:05.559+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:00:05.560+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:01:05.563+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:01:05.574+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:01:06.206+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:01:06.207+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:02:06.210+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:02:06.220+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:02:06.844+0000] {http.py:199} ERROR - HTTP error: Not Found
+[2024-05-18T16:02:06.844+0000] {http.py:200} ERROR - not found!
+[2024-05-18T16:03:06.847+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T16:03:06.859+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-18T16:03:08.690+0000] {http.py:199} ERROR - HTTP error: Service Unavailable
+[2024-05-18T16:03:08.691+0000] {http.py:200} ERROR - <!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Server Error</title>
+    <style media="screen">
+      :root {
+        --bg: hsl(250, 24%, 9%);
+        --fg: hsl(0, 0%, 100%);
+        --pink: hsl(270, 60%, 52%);
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+        background-color: var(--bg);
+        color: var(--fg);
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+          Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif,
+          Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+        height: 100%;
+      }
+
+      .logo {
+        width: 160px;
+        height: 160px;
+      }
+
+      main h1 {
+        font-size: 32px;
+        font-weight: 700;
+      }
+
+      main a {
+        appearance: none;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--fg);
+        background-color: var(--pink);
+        padding: 12px 24px;
+        border-radius: 6px;
+      }
+
+      main a:hover {
+        background-color: hsl(270, 60%, 42%);
+      }
+
+      h1 {
+        display: none;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .error-503 {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <svg
+        class="logo"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1024 1024"
+        fill="none"
+      >
+        <path
+          d="M4.756 438.175A520.713 520.713 0 0 0 0 489.735h777.799c-2.716-5.306-6.365-10.09-10.045-14.772-132.97-171.791-204.498-156.896-306.819-161.26-34.114-1.403-57.249-1.967-193.037-1.967-72.677 0-151.688.185-228.628.39-9.96 26.884-19.566 52.942-24.243 74.14h398.571v51.909H4.756ZM783.93 541.696H.399c.82 13.851 2.112 27.517 3.978 40.999h723.39c32.248 0 50.299-18.297 56.162-40.999ZM45.017 724.306S164.941 1018.77 511.46 1024c207.112 0 385.071-123.006 465.907-299.694H45.017Z"
+          fill="#fff"
+        />
+        <path
+          d="M511.454 0C319.953 0 153.311 105.16 65.31 260.612c68.771-.144 202.704-.226 202.704-.226h.031v-.051c158.309 0 164.193.707 195.118 1.998l19.149.706c66.7 2.224 148.683 9.384 213.19 58.19 35.015 26.471 85.571 84.896 115.708 126.52 27.861 38.499 35.876 82.756 16.933 125.158-17.436 38.97-54.952 62.215-100.383 62.215H16.69s4.233 17.944 10.58 37.751h970.632A510.385 510.385 0 0 0 1024 512.218C1024.01 229.355 794.532 0 511.454 0Z"
+          fill="#fff"
+        />
+      </svg>
+
+      <h1 class="error-404">Nothing here... yet</h1>
+      <h1 class="error-503">Application failed to respond</h1>
+
+      <a href="https://railway.app" target="_blank"> Go to Railway </a>
+    </main>
+  </body>
+</html>
+
+[2024-05-18T16:03:08.692+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-18T16:03:08.708+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/hooks/http.py", line 197, in check_response
+    response.raise_for_status()
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 503 Server Error: Service Unavailable for url: https://dummyjson.com//users
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/sensors/http.py", line 164, in execute
+    super().execute(context=context)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/sensors/base.py", line 264, in execute
+    raise e
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/sensors/base.py", line 246, in execute
+    poke_return = self.poke(context)
+                  ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/sensors/http.py", line 158, in poke
+    raise exc
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/sensors/http.py", line 139, in poke
+    response = hook.run(
+               ^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/hooks/http.py", line 187, in run
+    return self.run_and_check(session, prepped_request, extra_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/hooks/http.py", line 238, in run_and_check
+    self.check_response(response)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/hooks/http.py", line 201, in check_response
+    raise AirflowException(str(response.status_code) + ":" + response.reason)
+airflow.exceptions.AirflowException: 503:Service Unavailable
+[2024-05-18T16:03:08.716+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=dummyjson_ingestion, task_id=is_api_available, run_id=manual__2024-05-18T15:42:45.144020+00:00, execution_date=20240518T154245, start_date=20240518T154249, end_date=20240518T160308
+[2024-05-18T16:03:08.741+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 1161 for task is_api_available (503:Service Unavailable; 1042)
+[2024-05-18T16:03:08.772+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-05-18T16:03:08.798+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-18T16:03:08.802+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

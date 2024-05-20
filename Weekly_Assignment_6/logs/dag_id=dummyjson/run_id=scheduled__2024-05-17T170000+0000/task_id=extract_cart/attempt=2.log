@@ -1,0 +1,25 @@
+[2024-05-19T15:23:20.023+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-19T15:23:20.121+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dummyjson.extract_cart scheduled__2024-05-17T17:00:00+00:00 [queued]>
+[2024-05-19T15:23:20.165+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dummyjson.extract_cart scheduled__2024-05-17T17:00:00+00:00 [queued]>
+[2024-05-19T15:23:20.168+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 7
+[2024-05-19T15:23:20.244+0000] {taskinstance.py:2330} INFO - Executing <Task(SimpleHttpOperator): extract_cart> on 2024-05-17 17:00:00+00:00
+[2024-05-19T15:23:20.256+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1710) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-19T15:23:20.265+0000] {standard_task_runner.py:63} INFO - Started process 1726 to run task
+[2024-05-19T15:23:20.269+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dummyjson', 'extract_cart', 'scheduled__2024-05-17T17:00:00+00:00', '--job-id', '2014', '--raw', '--subdir', 'DAGS_FOLDER/dummyjson.py', '--cfg-path', '/tmp/tmpdebryusm']
+[2024-05-19T15:23:20.277+0000] {standard_task_runner.py:91} INFO - Job 2014: Subtask extract_cart
+[2024-05-19T15:23:20.465+0000] {task_command.py:426} INFO - Running <TaskInstance: dummyjson.extract_cart scheduled__2024-05-17T17:00:00+00:00 [running]> on host ca927d78a9ea
+[2024-05-19T15:23:21.480+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='fathurrahmanhernanda@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dummyjson' AIRFLOW_CTX_TASK_ID='extract_cart' AIRFLOW_CTX_EXECUTION_DATE='2024-05-17T17:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-05-17T17:00:00+00:00'
+[2024-05-19T15:23:21.484+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-19T15:23:21.491+0000] {http.py:169} INFO - Calling HTTP method
+[2024-05-19T15:23:21.538+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-19T15:23:21.591+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-19T15:23:24.298+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-19T15:23:24.448+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dummyjson, task_id=extract_cart, run_id=scheduled__2024-05-17T17:00:00+00:00, execution_date=20240517T170000, start_date=20240519T152320, end_date=20240519T152324
+[2024-05-19T15:23:24.543+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-19T15:23:24.625+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/models/baseoperator.py:1296: AirflowProviderDeprecationWarning: Call to deprecated class SimpleHttpOperator. (Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.)
+  result = cls.__new__(cls)
+
+[2024-05-19T15:23:24.717+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-19T15:23:24.725+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

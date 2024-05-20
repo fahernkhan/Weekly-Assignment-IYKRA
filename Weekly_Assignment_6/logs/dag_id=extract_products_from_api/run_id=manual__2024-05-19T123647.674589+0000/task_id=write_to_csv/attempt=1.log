@@ -1,0 +1,41 @@
+[2024-05-19T12:37:06.913+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-19T12:37:06.942+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: extract_products_from_api.write_to_csv manual__2024-05-19T12:36:47.674589+00:00 [queued]>
+[2024-05-19T12:37:06.957+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: extract_products_from_api.write_to_csv manual__2024-05-19T12:36:47.674589+00:00 [queued]>
+[2024-05-19T12:37:06.958+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-05-19T12:37:06.981+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): write_to_csv> on 2024-05-19 12:36:47.674589+00:00
+[2024-05-19T12:37:06.991+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=4372) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-19T12:37:06.993+0000] {standard_task_runner.py:63} INFO - Started process 4374 to run task
+[2024-05-19T12:37:06.994+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'extract_products_from_api', 'write_to_csv', 'manual__2024-05-19T12:36:47.674589+00:00', '--job-id', '1737', '--raw', '--subdir', 'DAGS_FOLDER/dummyjson_product.py', '--cfg-path', '/tmp/tmpw16p04lx']
+[2024-05-19T12:37:06.995+0000] {standard_task_runner.py:91} INFO - Job 1737: Subtask write_to_csv
+[2024-05-19T12:37:07.062+0000] {task_command.py:426} INFO - Running <TaskInstance: extract_products_from_api.write_to_csv manual__2024-05-19T12:36:47.674589+00:00 [running]> on host ca927d78a9ea
+[2024-05-19T12:37:07.470+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='fathurrahmanhernanda@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='extract_products_from_api' AIRFLOW_CTX_TASK_ID='write_to_csv' AIRFLOW_CTX_EXECUTION_DATE='2024-05-19T12:36:47.674589+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-19T12:36:47.674589+00:00'
+[2024-05-19T12:37:07.471+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-19T12:37:07.472+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-19T12:37:07.473+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/dummyjson_product.py", line 31, in write_to_csv
+    products_list = kwargs['products_list']
+                    ~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'products_list'
+[2024-05-19T12:37:07.487+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=extract_products_from_api, task_id=write_to_csv, run_id=manual__2024-05-19T12:36:47.674589+00:00, execution_date=20240519T123647, start_date=20240519T123706, end_date=20240519T123707
+[2024-05-19T12:37:07.509+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 1737 for task write_to_csv ('products_list'; 4374)
+[2024-05-19T12:37:07.529+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-05-19T12:37:07.817+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-19T12:37:07.820+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

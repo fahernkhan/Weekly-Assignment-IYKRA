@@ -1,0 +1,101 @@
+cartID,productID,title,price,quantity,total,discountPercentage,discountedPrice,thumbnail
+1,59,Spring and summershoes,20,3,60,8.71,55,https://cdn.dummyjson.com/product-images/59/thumbnail.jpg
+1,88,TC Reusable Silicone Magic Washing Gloves,29,2,58,3.19,56,https://cdn.dummyjson.com/product-images/88/thumbnail.jpg
+1,18,Oil Free Moisturizer 100ml,40,2,80,13.1,70,https://cdn.dummyjson.com/product-images/18/thumbnail.jpg
+1,95,Wholesale cargo lashing Belt,930,1,930,17.67,766,https://cdn.dummyjson.com/product-images/95/thumbnail.jpg
+1,39,Women Sweaters Wool,600,2,1200,17.2,994,https://cdn.dummyjson.com/product-images/39/thumbnail.jpg
+2,96,lighting ceiling kitchen,30,2,60,14.89,51,https://cdn.dummyjson.com/product-images/96/thumbnail.jpg
+2,91,Black Motorbike,569,3,1707,13.63,1474,https://cdn.dummyjson.com/product-images/91/thumbnail.jpg
+2,9,Infinix INBOOK,1099,1,1099,11.83,969,https://cdn.dummyjson.com/product-images/9/thumbnail.jpg
+2,16,Hyaluronic Acid Serum,19,1,19,13.31,16,https://cdn.dummyjson.com/product-images/16/thumbnail.jpg
+2,54,Pubg Printed Graphic T-Shirt,46,3,138,16.44,115,https://cdn.dummyjson.com/product-images/54/thumbnail.jpg
+3,37,ank Tops for Womens/Girls,50,2,100,12.05,88,https://cdn.dummyjson.com/product-images/37/thumbnail.jpg
+3,80,Chain Pin Tassel Earrings,45,3,135,17.75,111,https://cdn.dummyjson.com/product-images/80/thumbnail.jpg
+3,68,Stylish Luxury Digital Watch,57,3,171,9.03,156,https://cdn.dummyjson.com/product-images/68/thumbnail.webp
+3,81,Round Silver Frame Sun Glasses,19,1,19,10.1,17,https://cdn.dummyjson.com/product-images/81/thumbnail.jpg
+3,90,Cycle Bike Glow,35,1,35,11.08,31,https://cdn.dummyjson.com/product-images/90/thumbnail.jpg
+4,36,Sleeve Shirt Womens,90,1,90,10.89,80,https://cdn.dummyjson.com/product-images/36/thumbnail.jpg
+4,54,Pubg Printed Graphic T-Shirt,46,1,46,16.44,38,https://cdn.dummyjson.com/product-images/54/thumbnail.jpg
+4,11,perfume Oil,13,3,39,8.4,36,https://cdn.dummyjson.com/product-images/11/thumbnail.jpg
+4,47,Sneaker shoes,120,2,240,10.37,215,https://cdn.dummyjson.com/product-images/47/thumbnail.jpeg
+4,64,Leather Strap Skeleton Watch,46,3,138,10.2,124,https://cdn.dummyjson.com/product-images/64/thumbnail.jpg
+5,23,Orange Essence Food Flavou,14,3,42,8.04,39,https://cdn.dummyjson.com/product-images/23/thumbnail.jpg
+5,91,Black Motorbike,569,1,569,13.63,491,https://cdn.dummyjson.com/product-images/91/thumbnail.jpg
+5,45,Malai Maxi Dress,50,2,100,5.07,95,https://cdn.dummyjson.com/product-images/45/thumbnail.jpg
+5,84,Square Sunglasses,28,1,28,13.89,24,https://cdn.dummyjson.com/product-images/84/thumbnail.jpg
+5,70,Stainless Steel Women,35,3,105,8.98,96,https://cdn.dummyjson.com/product-images/70/thumbnail.jpg
+6,53,printed high quality T shirts,35,3,105,7.54,97,https://cdn.dummyjson.com/product-images/53/thumbnail.jpg
+6,61,Leather Straps Wristwatch,120,2,240,7.14,223,https://cdn.dummyjson.com/product-images/61/thumbnail.jpg
+6,92,HOT SALE IN EUROPE electric racing motorcycle,920,1,920,14.4,788,https://cdn.dummyjson.com/product-images/92/thumbnail.jpg
+6,11,perfume Oil,13,3,39,8.4,36,https://cdn.dummyjson.com/product-images/11/thumbnail.jpg
+6,37,ank Tops for Womens/Girls,50,3,150,12.05,132,https://cdn.dummyjson.com/product-images/37/thumbnail.jpg
+7,61,Leather Straps Wristwatch,120,1,120,7.14,111,https://cdn.dummyjson.com/product-images/61/thumbnail.jpg
+7,80,Chain Pin Tassel Earrings,45,2,90,17.75,74,https://cdn.dummyjson.com/product-images/80/thumbnail.jpg
+7,99,American Vintage Wood Pendant Light,46,3,138,8.84,126,https://cdn.dummyjson.com/product-images/99/thumbnail.jpg
+7,14,Non-Alcoholic Concentrated Perfume Oil,120,1,120,15.6,101,https://cdn.dummyjson.com/product-images/14/thumbnail.jpg
+7,48,Women Strip Heel,40,3,120,10.83,107,https://cdn.dummyjson.com/product-images/48/thumbnail.jpg
+8,45,Malai Maxi Dress,50,1,50,5.07,47,https://cdn.dummyjson.com/product-images/45/thumbnail.jpg
+8,83,Wiley X Night Vision Yellow Glasses,30,3,90,6.33,84,https://cdn.dummyjson.com/product-images/83/thumbnail.jpg
+8,96,lighting ceiling kitchen,30,1,30,14.89,26,https://cdn.dummyjson.com/product-images/96/thumbnail.jpg
+8,21,- Daal Masoor 500 grams,20,3,60,4.81,57,https://cdn.dummyjson.com/product-images/21/thumbnail.png
+8,2,iphone X,899,1,899,17.94,738,https://cdn.dummyjson.com/product-images/2/thumbnail.jpg
+9,74,Leather Hand Bag,57,3,171,11.19,152,https://cdn.dummyjson.com/product-images/74/thumbnail.jpg
+9,10,HP Pavilion 15-DK1056WM,1099,3,3297,6.18,3093,https://cdn.dummyjson.com/product-images/10/thumbnail.jpeg
+9,19,Skin Beauty Serum.,46,2,92,10.68,82,https://cdn.dummyjson.com/product-images/19/thumbnail.jpg
+9,53,printed high quality T shirts,35,1,35,7.54,32,https://cdn.dummyjson.com/product-images/53/thumbnail.jpg
+9,13,Fog Scent Xpressio Perfume,13,1,13,8.14,12,https://cdn.dummyjson.com/product-images/13/thumbnail.webp
+10,75,Seven Pocket Women Bag,68,1,68,14.87,58,https://cdn.dummyjson.com/product-images/75/thumbnail.jpg
+10,39,Women Sweaters Wool,600,1,600,17.2,497,https://cdn.dummyjson.com/product-images/39/thumbnail.jpg
+10,3,Samsung Universe 9,1249,3,3747,15.46,3168,https://cdn.dummyjson.com/product-images/3/thumbnail.jpg
+10,7,Samsung Galaxy Book,1499,1,1499,4.15,1437,https://cdn.dummyjson.com/product-images/7/thumbnail.jpg
+10,93,Automatic Motor Gas Motorcycles,1050,3,3150,3.34,3045,https://cdn.dummyjson.com/product-images/93/thumbnail.jpg
+11,71,Women Shoulder Bags,46,3,138,14.65,118,https://cdn.dummyjson.com/product-images/71/thumbnail.jpg
+11,25,Gulab Powder 50 Gram,70,2,140,13.58,121,https://cdn.dummyjson.com/product-images/25/thumbnail.jpg
+11,65,Stainless Steel Wrist Watch,47,3,141,17.79,116,https://cdn.dummyjson.com/product-images/65/thumbnail.webp
+11,58,formal offices shoes,57,1,57,12,50,https://cdn.dummyjson.com/product-images/58/thumbnail.jpg
+11,53,printed high quality T shirts,35,3,105,7.54,97,https://cdn.dummyjson.com/product-images/53/thumbnail.jpg
+12,32,Sofa for Coffe Cafe,50,2,100,15.59,84,https://cdn.dummyjson.com/product-images/32/thumbnail.jpg
+12,41,NIGHT SUIT,55,3,165,15.05,140,https://cdn.dummyjson.com/product-images/41/thumbnail.webp
+12,69,Golden Watch Pearls Bracelet Watch,47,1,47,17.55,39,https://cdn.dummyjson.com/product-images/69/thumbnail.jpg
+12,98,3 lights lndenpant kitchen islang,34,3,102,5.92,96,https://cdn.dummyjson.com/product-images/98/thumbnail.jpg
+12,67,Fashion Magnetic Wrist Watch,60,2,120,16.69,100,https://cdn.dummyjson.com/product-images/67/thumbnail.jpg
+13,81,Round Silver Frame Sun Glasses,19,1,19,10.1,17,https://cdn.dummyjson.com/product-images/81/thumbnail.jpg
+13,42,Stiched Kurta plus trouser,80,2,160,15.37,135,https://cdn.dummyjson.com/product-images/42/thumbnail.jpg
+13,29,Handcraft Chinese style,60,3,180,15.34,152,https://cdn.dummyjson.com/product-images/29/thumbnail.webp
+13,64,Leather Strap Skeleton Watch,46,2,92,10.2,83,https://cdn.dummyjson.com/product-images/64/thumbnail.jpg
+13,54,Pubg Printed Graphic T-Shirt,46,1,46,16.44,38,https://cdn.dummyjson.com/product-images/54/thumbnail.jpg
+14,64,Leather Strap Skeleton Watch,46,2,92,10.2,83,https://cdn.dummyjson.com/product-images/64/thumbnail.jpg
+14,76,Silver Ring Set Women,70,2,140,13.57,121,https://cdn.dummyjson.com/product-images/76/thumbnail.jpg
+14,30,Key Holder,30,2,60,2.92,58,https://cdn.dummyjson.com/product-images/30/thumbnail.jpg
+14,88,TC Reusable Silicone Magic Washing Gloves,29,1,29,3.19,28,https://cdn.dummyjson.com/product-images/88/thumbnail.jpg
+14,94,new arrivals Fashion motocross goggles,900,2,1800,3.85,1731,https://cdn.dummyjson.com/product-images/94/thumbnail.webp
+15,4,OPPOF19,280,1,280,17.91,230,https://cdn.dummyjson.com/product-images/4/thumbnail.jpg
+15,100,Crystal chandelier maria theresa for 12 light,47,3,141,16,118,https://cdn.dummyjson.com/product-images/100/thumbnail.jpg
+15,1,iPhone 9,549,2,1098,12.96,956,https://cdn.dummyjson.com/product-images/1/thumbnail.jpg
+15,48,Women Strip Heel,40,3,120,10.83,107,https://cdn.dummyjson.com/product-images/48/thumbnail.jpg
+15,94,new arrivals Fashion motocross goggles,900,3,2700,3.85,2596,https://cdn.dummyjson.com/product-images/94/thumbnail.webp
+16,3,Samsung Universe 9,1249,3,3747,15.46,3168,https://cdn.dummyjson.com/product-images/3/thumbnail.jpg
+16,50,Women Shoes,36,3,108,16.87,90,https://cdn.dummyjson.com/product-images/50/thumbnail.jpg
+16,67,Fashion Magnetic Wrist Watch,60,2,120,16.69,100,https://cdn.dummyjson.com/product-images/67/thumbnail.jpg
+16,86,Bluetooth Aux,25,1,25,10.56,22,https://cdn.dummyjson.com/product-images/86/thumbnail.jpg
+16,12,Brown Perfume,40,1,40,15.66,34,https://cdn.dummyjson.com/product-images/12/thumbnail.jpg
+17,12,Brown Perfume,40,3,120,15.66,101,https://cdn.dummyjson.com/product-images/12/thumbnail.jpg
+17,25,Gulab Powder 50 Gram,70,1,70,13.58,60,https://cdn.dummyjson.com/product-images/25/thumbnail.jpg
+17,24,cereals muesli fruit nuts,46,2,92,16.8,77,https://cdn.dummyjson.com/product-images/24/thumbnail.jpg
+17,90,Cycle Bike Glow,35,1,35,11.08,31,https://cdn.dummyjson.com/product-images/90/thumbnail.jpg
+17,97,Metal Ceramic Flower,35,1,35,10.94,31,https://cdn.dummyjson.com/product-images/97/thumbnail.jpg
+18,23,Orange Essence Food Flavou,14,2,28,8.04,26,https://cdn.dummyjson.com/product-images/23/thumbnail.jpg
+18,25,Gulab Powder 50 Gram,70,2,140,13.58,121,https://cdn.dummyjson.com/product-images/25/thumbnail.jpg
+18,9,Infinix INBOOK,1099,2,2198,11.83,1938,https://cdn.dummyjson.com/product-images/9/thumbnail.jpg
+18,78,Rhinestone Korean Style Open Rings,30,2,60,8.02,55,https://cdn.dummyjson.com/product-images/78/thumbnail.jpg
+18,63,Royal Blue Premium Watch,50,1,50,2.56,49,https://cdn.dummyjson.com/product-images/63/thumbnail.webp
+19,43,frock gold printed,600,3,1800,15.55,1520,https://cdn.dummyjson.com/product-images/43/thumbnail.jpg
+19,77,Rose Ring,100,3,300,3.22,290,https://cdn.dummyjson.com/product-images/77/thumbnail.jpg
+19,50,Women Shoes,36,3,108,16.87,90,https://cdn.dummyjson.com/product-images/50/thumbnail.jpg
+19,31,Mornadi Velvet Bed,40,2,80,17,66,https://cdn.dummyjson.com/product-images/31/thumbnail.jpg
+19,75,Seven Pocket Women Bag,68,3,204,14.87,174,https://cdn.dummyjson.com/product-images/75/thumbnail.jpg
+20,66,Steel Analog Couple Watches,35,3,105,3.23,102,https://cdn.dummyjson.com/product-images/66/thumbnail.jpg
+20,59,Spring and summershoes,20,1,20,8.71,18,https://cdn.dummyjson.com/product-images/59/thumbnail.jpg
+20,29,Handcraft Chinese style,60,1,60,15.34,51,https://cdn.dummyjson.com/product-images/29/thumbnail.webp
+20,32,Sofa for Coffe Cafe,50,1,50,15.59,42,https://cdn.dummyjson.com/product-images/32/thumbnail.jpg
+20,46,women's shoes,40,2,80,16.96,66,https://cdn.dummyjson.com/product-images/46/thumbnail.jpg

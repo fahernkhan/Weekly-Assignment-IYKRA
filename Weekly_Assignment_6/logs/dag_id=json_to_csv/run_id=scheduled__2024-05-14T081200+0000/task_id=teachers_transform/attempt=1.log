@@ -1,0 +1,22 @@
+[2024-05-14T08:14:05.755+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-14T08:14:05.802+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: json_to_csv.teachers_transform scheduled__2024-05-14T08:12:00+00:00 [queued]>
+[2024-05-14T08:14:05.818+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: json_to_csv.teachers_transform scheduled__2024-05-14T08:12:00+00:00 [queued]>
+[2024-05-14T08:14:05.819+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-14T08:14:05.844+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): teachers_transform> on 2024-05-14 08:12:00+00:00
+[2024-05-14T08:14:05.854+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=864) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-14T08:14:05.857+0000] {standard_task_runner.py:63} INFO - Started process 868 to run task
+[2024-05-14T08:14:05.857+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'json_to_csv', 'teachers_transform', 'scheduled__2024-05-14T08:12:00+00:00', '--job-id', '332', '--raw', '--subdir', 'DAGS_FOLDER/json_to_csv.py', '--cfg-path', '/tmp/tmppbrvubw2']
+[2024-05-14T08:14:05.861+0000] {standard_task_runner.py:91} INFO - Job 332: Subtask teachers_transform
+[2024-05-14T08:14:05.948+0000] {task_command.py:426} INFO - Running <TaskInstance: json_to_csv.teachers_transform scheduled__2024-05-14T08:12:00+00:00 [running]> on host c2025ffc2c56
+[2024-05-14T08:14:06.133+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='json_to_csv' AIRFLOW_CTX_TASK_ID='teachers_transform' AIRFLOW_CTX_EXECUTION_DATE='2024-05-14T08:12:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-05-14T08:12:00+00:00'
+[2024-05-14T08:14:06.137+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-14T08:14:06.138+0000] {python.py:237} INFO - Done. Returned value was: 1,Fariz Luthfan,2020-01-01
+2,Farhurrahman Khasan,2029-01-01
+
+[2024-05-14T08:14:06.139+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-14T08:14:06.174+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=json_to_csv, task_id=teachers_transform, run_id=scheduled__2024-05-14T08:12:00+00:00, execution_date=20240514T081200, start_date=20240514T081405, end_date=20240514T081406
+[2024-05-14T08:14:06.233+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-14T08:14:06.271+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-14T08:14:06.275+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,23 @@
+[2024-05-16T09:27:35.441+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-16T09:27:35.539+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: randomuser_ingestion.is_api_available scheduled__2024-05-01T21:00:00+00:00 [queued]>
+[2024-05-16T09:27:35.560+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: randomuser_ingestion.is_api_available scheduled__2024-05-01T21:00:00+00:00 [queued]>
+[2024-05-16T09:27:35.561+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-16T09:27:35.605+0000] {taskinstance.py:2330} INFO - Executing <Task(HttpSensor): is_api_available> on 2024-05-01 21:00:00+00:00
+[2024-05-16T09:27:35.625+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=207) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-16T09:27:35.629+0000] {standard_task_runner.py:63} INFO - Started process 258 to run task
+[2024-05-16T09:27:35.629+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'randomuser_ingestion', 'is_api_available', 'scheduled__2024-05-01T21:00:00+00:00', '--job-id', '1042', '--raw', '--subdir', 'DAGS_FOLDER/randomuser_ingestion.py', '--cfg-path', '/tmp/tmp209yionh']
+[2024-05-16T09:27:35.636+0000] {standard_task_runner.py:91} INFO - Job 1042: Subtask is_api_available
+[2024-05-16T09:27:35.756+0000] {task_command.py:426} INFO - Running <TaskInstance: randomuser_ingestion.is_api_available scheduled__2024-05-01T21:00:00+00:00 [running]> on host 8d1d9b6df744
+[2024-05-16T09:27:35.989+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='randomuser_ingestion' AIRFLOW_CTX_TASK_ID='is_api_available' AIRFLOW_CTX_EXECUTION_DATE='2024-05-01T21:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-05-01T21:00:00+00:00'
+[2024-05-16T09:27:35.992+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-16T09:27:35.993+0000] {baseoperator.py:399} WARNING - HttpSensor.execute cannot be called outside TaskInstance!
+[2024-05-16T09:27:35.993+0000] {http.py:137} INFO - Poking: /api
+[2024-05-16T09:27:36.010+0000] {base.py:84} INFO - Using connection ID 'randomuser_api' for task execution.
+[2024-05-16T09:27:38.420+0000] {base.py:294} INFO - Success criteria met. Exiting.
+[2024-05-16T09:27:38.444+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-16T09:27:38.463+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=randomuser_ingestion, task_id=is_api_available, run_id=scheduled__2024-05-01T21:00:00+00:00, execution_date=20240501T210000, start_date=20240516T092735, end_date=20240516T092738
+[2024-05-16T09:27:38.587+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-16T09:27:38.608+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-16T09:27:38.611+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

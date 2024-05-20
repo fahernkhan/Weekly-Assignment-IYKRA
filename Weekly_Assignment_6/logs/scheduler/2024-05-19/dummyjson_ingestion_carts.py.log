@@ -1,0 +1,869 @@
+[2024-05-19T09:20:32.132+0000] {processor.py:161} INFO - Started process (PID=730) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:20:32.134+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:20:32.137+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:20:32.136+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:20:32.191+0000] {processor.py:840} INFO - DAG(s) 'dummyjson_ingestion_carts' retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:20:32.380+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:20:32.379+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:dummyjson_ingestion_carts
+[2024-05-19T09:20:32.394+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:20:32.393+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:dummyjson_ingestion_carts
+[2024-05-19T09:20:32.404+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:20:32.404+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:dummyjson_ingestion_carts
+[2024-05-19T09:20:32.405+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:20:32.405+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-19T09:20:32.422+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:20:32.421+0000] {dag.py:3118} INFO - Creating ORM DAG for dummyjson_ingestion_carts
+[2024-05-19T09:20:32.436+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:20:32.436+0000] {dag.py:3954} INFO - Setting next_dagrun for dummyjson_ingestion_carts to 2024-05-01 00:00:00+00:00, run_after=2024-05-01 00:00:00+00:00
+[2024-05-19T09:20:32.461+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.341 seconds
+[2024-05-19T09:20:36.606+0000] {processor.py:161} INFO - Started process (PID=731) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:20:36.607+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:20:36.610+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:20:36.610+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:20:36.653+0000] {processor.py:840} INFO - DAG(s) 'dummyjson_ingestion_carts' retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:20:36.671+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:20:36.670+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-19T09:20:36.700+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:20:36.700+0000] {dag.py:3954} INFO - Setting next_dagrun for dummyjson_ingestion_carts to 2024-05-01 00:00:00+00:00, run_after=2024-05-01 00:00:00+00:00
+[2024-05-19T09:20:36.735+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.141 seconds
+[2024-05-19T09:21:06.829+0000] {processor.py:161} INFO - Started process (PID=799) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:21:06.831+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:21:06.835+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:21:06.834+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:21:06.868+0000] {processor.py:840} INFO - DAG(s) 'dummyjson_ingestion_carts' retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:21:06.901+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:21:06.900+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-19T09:21:06.937+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:21:06.937+0000] {dag.py:3954} INFO - Setting next_dagrun for dummyjson_ingestion_carts to 2024-05-01 00:00:00+00:00, run_after=2024-05-01 00:00:00+00:00
+[2024-05-19T09:21:06.964+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.147 seconds
+[2024-05-19T09:21:37.091+0000] {processor.py:161} INFO - Started process (PID=867) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:21:37.093+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:21:37.097+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:21:37.096+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:21:37.140+0000] {processor.py:840} INFO - DAG(s) 'dummyjson_ingestion_carts' retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:21:37.177+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:21:37.176+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-19T09:21:37.207+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:21:37.206+0000] {dag.py:3954} INFO - Setting next_dagrun for dummyjson_ingestion_carts to 2024-05-01 00:00:00+00:00, run_after=2024-05-01 00:00:00+00:00
+[2024-05-19T09:21:37.234+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.154 seconds
+[2024-05-19T09:21:56.958+0000] {processor.py:161} INFO - Started process (PID=919) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:21:56.959+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:21:56.962+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:21:56.962+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:21:57.013+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:21:56.997+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:21:57.027+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:21:57.059+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.116 seconds
+[2024-05-19T09:22:08.952+0000] {processor.py:161} INFO - Started process (PID=936) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:22:08.953+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:22:08.958+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:22:08.957+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:22:09.010+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:22:08.994+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:22:09.019+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:22:09.048+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.106 seconds
+[2024-05-19T09:22:39.710+0000] {processor.py:161} INFO - Started process (PID=1004) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:22:39.712+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:22:39.718+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:22:39.717+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:22:39.757+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:22:39.743+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:22:39.779+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:22:39.871+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.175 seconds
+[2024-05-19T09:22:42.038+0000] {processor.py:161} INFO - Started process (PID=1005) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:22:42.040+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:22:42.043+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:22:42.043+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:22:42.105+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:22:42.087+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:22:42.115+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:22:42.152+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.125 seconds
+[2024-05-19T09:23:12.251+0000] {processor.py:161} INFO - Started process (PID=1073) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:23:12.253+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:23:12.258+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:23:12.257+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:23:12.298+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:23:12.284+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:23:12.311+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:23:12.345+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.107 seconds
+[2024-05-19T09:23:43.256+0000] {processor.py:161} INFO - Started process (PID=1147) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:23:43.257+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:23:43.259+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:23:43.258+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:23:43.289+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:23:43.277+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:23:43.300+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:23:43.332+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.087 seconds
+[2024-05-19T09:24:02.191+0000] {processor.py:161} INFO - Started process (PID=1200) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:24:02.194+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:24:02.196+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:24:02.195+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:24:02.253+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:24:02.237+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:24:02.267+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:24:02.311+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.134 seconds
+[2024-05-19T09:24:07.996+0000] {processor.py:161} INFO - Started process (PID=1210) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:24:07.998+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:24:08.000+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:24:07.999+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:24:08.057+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:24:08.041+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:24:08.067+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:24:08.102+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.116 seconds
+[2024-05-19T09:24:38.812+0000] {processor.py:161} INFO - Started process (PID=1278) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:24:38.813+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:24:38.814+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:24:38.814+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:24:38.851+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:24:38.837+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:24:38.860+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:24:38.893+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.091 seconds
+[2024-05-19T09:25:09.338+0000] {processor.py:161} INFO - Started process (PID=1346) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:25:09.340+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:25:09.342+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:25:09.341+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:25:09.378+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:25:09.363+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:25:09.388+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:25:09.416+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.089 seconds
+[2024-05-19T09:25:39.666+0000] {processor.py:161} INFO - Started process (PID=1414) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:25:39.668+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:25:39.669+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:25:39.669+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:25:39.706+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:25:39.691+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:25:39.716+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:25:39.744+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.087 seconds
+[2024-05-19T09:26:10.494+0000] {processor.py:161} INFO - Started process (PID=1482) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:26:10.495+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:26:10.497+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:26:10.496+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:26:10.542+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:26:10.526+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:26:10.552+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:26:10.581+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.098 seconds
+[2024-05-19T09:26:41.145+0000] {processor.py:161} INFO - Started process (PID=1550) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:26:41.147+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:26:41.149+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:26:41.148+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:26:41.192+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:26:41.175+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:26:41.203+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:26:41.243+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.108 seconds
+[2024-05-19T09:27:12.077+0000] {processor.py:161} INFO - Started process (PID=1618) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:27:12.079+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:27:12.082+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:27:12.082+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:27:12.131+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:27:12.117+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:27:12.142+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:27:12.175+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.111 seconds
+[2024-05-19T09:27:42.502+0000] {processor.py:161} INFO - Started process (PID=1686) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:27:42.504+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:27:42.506+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:27:42.505+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:27:42.558+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:27:42.540+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:27:42.573+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:27:42.605+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.114 seconds
+[2024-05-19T09:28:12.854+0000] {processor.py:161} INFO - Started process (PID=1754) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:28:12.855+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:28:12.857+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:28:12.857+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:28:12.904+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:28:12.886+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:28:12.913+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:28:12.946+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.102 seconds
+[2024-05-19T09:28:43.643+0000] {processor.py:161} INFO - Started process (PID=1828) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:28:43.646+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:28:43.648+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:28:43.647+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:28:43.733+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:28:43.710+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:28:43.751+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:28:43.793+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.170 seconds
+[2024-05-19T09:29:13.905+0000] {processor.py:161} INFO - Started process (PID=1896) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:29:13.907+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:29:13.909+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:29:13.908+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:29:13.961+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:29:13.937+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:29:13.971+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:29:14.005+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.117 seconds
+[2024-05-19T09:29:44.237+0000] {processor.py:161} INFO - Started process (PID=1964) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:29:44.239+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:29:44.241+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:29:44.240+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:29:44.280+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:29:44.266+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:29:44.293+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:29:44.320+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.093 seconds
+[2024-05-19T09:30:14.418+0000] {processor.py:161} INFO - Started process (PID=2032) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:30:14.420+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:30:14.422+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:30:14.421+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:30:14.469+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:30:14.453+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:30:14.478+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:30:14.505+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.096 seconds
+[2024-05-19T09:30:44.760+0000] {processor.py:161} INFO - Started process (PID=2100) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:30:44.762+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:30:44.765+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:30:44.764+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:30:44.802+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:30:44.790+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:30:44.812+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:30:44.843+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.098 seconds
+[2024-05-19T09:31:15.776+0000] {processor.py:161} INFO - Started process (PID=2168) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:31:15.778+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:31:15.779+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:31:15.779+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:31:15.820+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:31:15.806+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:31:15.829+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:31:15.860+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.094 seconds
+[2024-05-19T09:31:46.038+0000] {processor.py:161} INFO - Started process (PID=2236) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:31:46.040+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:31:46.041+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:31:46.041+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:31:46.084+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:31:46.069+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:31:46.094+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:31:46.124+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.095 seconds
+[2024-05-19T09:32:16.871+0000] {processor.py:161} INFO - Started process (PID=2304) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:32:16.873+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:32:16.875+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:32:16.874+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:32:16.918+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:32:16.901+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:32:16.933+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:32:16.977+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.116 seconds
+[2024-05-19T09:32:47.247+0000] {processor.py:161} INFO - Started process (PID=2372) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:32:47.252+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:32:47.254+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:32:47.253+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:32:47.295+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:32:47.281+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:32:47.305+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:32:47.334+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.096 seconds
+[2024-05-19T09:33:17.677+0000] {processor.py:161} INFO - Started process (PID=2440) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:33:17.679+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:33:17.681+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:33:17.680+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:33:17.719+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:33:17.705+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:33:17.732+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:33:17.770+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.104 seconds
+[2024-05-19T09:33:48.407+0000] {processor.py:161} INFO - Started process (PID=2508) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:33:48.409+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:33:48.411+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:33:48.410+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:33:48.461+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:33:48.439+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:33:48.481+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:33:48.513+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.115 seconds
+[2024-05-19T09:34:18.927+0000] {processor.py:161} INFO - Started process (PID=2576) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:34:18.932+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:34:18.935+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:34:18.934+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:34:18.975+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:34:18.960+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:34:18.987+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:34:19.030+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.114 seconds
+[2024-05-19T09:34:49.224+0000] {processor.py:161} INFO - Started process (PID=2644) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:34:49.227+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:34:49.229+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:34:49.228+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:34:49.282+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:34:49.259+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:34:49.292+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:34:49.325+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.115 seconds
+[2024-05-19T09:35:19.478+0000] {processor.py:161} INFO - Started process (PID=2712) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:35:19.480+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:35:19.482+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:35:19.481+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:35:19.532+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:35:19.516+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:35:19.546+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:35:19.592+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.131 seconds
+[2024-05-19T09:35:50.377+0000] {processor.py:161} INFO - Started process (PID=2780) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:35:50.379+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:35:50.382+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:35:50.381+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:35:50.431+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:35:50.413+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:35:50.448+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:35:50.516+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.158 seconds
+[2024-05-19T09:36:20.708+0000] {processor.py:161} INFO - Started process (PID=2848) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:36:20.709+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:36:20.711+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:36:20.710+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:36:20.741+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:36:20.729+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:36:20.753+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:36:20.779+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.082 seconds
+[2024-05-19T09:36:51.228+0000] {processor.py:161} INFO - Started process (PID=2916) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:36:51.230+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:36:51.231+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:36:51.231+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:36:51.284+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:36:51.263+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:36:51.294+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:36:51.324+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.105 seconds
+[2024-05-19T09:37:22.086+0000] {processor.py:161} INFO - Started process (PID=2984) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:37:22.088+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:37:22.090+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:37:22.089+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:37:22.126+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:37:22.114+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:37:22.135+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:37:22.168+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.093 seconds
+[2024-05-19T09:37:52.439+0000] {processor.py:161} INFO - Started process (PID=3052) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:37:52.440+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:37:52.442+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:37:52.441+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:37:52.483+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:37:52.469+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:37:52.493+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:37:52.522+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.094 seconds
+[2024-05-19T09:38:22.726+0000] {processor.py:161} INFO - Started process (PID=3120) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:38:22.727+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:38:22.729+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:38:22.728+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:38:22.771+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:38:22.756+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:38:22.781+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:38:22.815+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.098 seconds
+[2024-05-19T09:38:53.302+0000] {processor.py:161} INFO - Started process (PID=3188) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:38:53.303+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:38:53.305+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:38:53.304+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:38:53.341+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:38:53.327+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:38:53.349+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:38:53.376+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.084 seconds
+[2024-05-19T09:39:23.885+0000] {processor.py:161} INFO - Started process (PID=3256) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:39:23.886+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:39:23.888+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:39:23.888+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:39:23.930+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:39:23.914+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:39:23.939+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:39:23.973+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.097 seconds
+[2024-05-19T09:39:54.300+0000] {processor.py:161} INFO - Started process (PID=3324) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:39:54.302+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:39:54.305+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:39:54.304+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:39:54.348+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:39:54.332+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:39:54.357+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:39:54.385+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.097 seconds
+[2024-05-19T09:40:25.085+0000] {processor.py:161} INFO - Started process (PID=3391) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:40:25.087+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:40:25.089+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:40:25.088+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:40:25.131+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:40:25.115+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:40:25.141+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:40:25.177+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.104 seconds
+[2024-05-19T09:40:55.573+0000] {processor.py:161} INFO - Started process (PID=3459) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:40:55.574+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:40:55.576+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:40:55.575+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:40:55.617+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:40:55.604+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:40:55.626+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:40:55.665+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.101 seconds
+[2024-05-19T09:41:26.057+0000] {processor.py:161} INFO - Started process (PID=3527) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:41:26.059+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:41:26.062+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:41:26.061+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:41:26.109+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:41:26.091+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:41:26.121+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:41:26.152+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.116 seconds
+[2024-05-19T09:41:56.445+0000] {processor.py:161} INFO - Started process (PID=3595) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:41:56.447+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:41:56.448+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:41:56.448+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:41:56.484+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:41:56.471+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:41:56.494+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:41:56.524+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.090 seconds
+[2024-05-19T09:42:26.946+0000] {processor.py:161} INFO - Started process (PID=3663) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:42:26.948+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:42:26.949+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:42:26.949+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:42:26.986+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:42:26.972+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:42:26.995+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:42:27.034+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.096 seconds
+[2024-05-19T09:42:57.308+0000] {processor.py:161} INFO - Started process (PID=3731) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:42:57.310+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:42:57.312+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:42:57.311+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:42:57.351+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:42:57.337+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:42:57.362+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:42:57.393+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.094 seconds
+[2024-05-19T09:43:28.100+0000] {processor.py:161} INFO - Started process (PID=3799) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:43:28.102+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:43:28.104+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:43:28.103+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:43:28.148+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:43:28.135+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:43:28.158+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:43:28.190+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.105 seconds
+[2024-05-19T09:43:58.474+0000] {processor.py:161} INFO - Started process (PID=3867) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:43:58.476+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:43:58.479+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:43:58.478+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:43:58.527+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:43:58.511+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:43:58.538+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:43:58.568+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.107 seconds
+[2024-05-19T09:44:29.300+0000] {processor.py:161} INFO - Started process (PID=3935) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:44:29.302+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:44:29.303+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:44:29.303+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:44:29.346+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:44:29.331+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:44:29.356+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:44:29.384+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.101 seconds
+[2024-05-19T09:44:59.759+0000] {processor.py:161} INFO - Started process (PID=4003) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:44:59.760+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:44:59.762+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:44:59.761+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:44:59.793+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:44:59.782+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:44:59.803+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:44:59.832+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.082 seconds
+[2024-05-19T09:45:30.381+0000] {processor.py:161} INFO - Started process (PID=4071) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:45:30.383+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:45:30.384+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:45:30.384+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:45:30.426+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:45:30.412+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:45:30.436+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:45:30.469+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.097 seconds
+[2024-05-19T09:46:00.728+0000] {processor.py:161} INFO - Started process (PID=4139) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:46:00.730+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:46:00.732+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:46:00.731+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:46:00.768+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:46:00.755+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:46:00.778+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:46:00.803+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.086 seconds
+[2024-05-19T09:46:30.959+0000] {processor.py:161} INFO - Started process (PID=4208) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:46:30.961+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:46:30.963+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:46:30.962+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:46:31.013+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:46:30.997+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:46:31.023+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:46:31.054+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.106 seconds
+[2024-05-19T09:47:01.977+0000] {processor.py:161} INFO - Started process (PID=4276) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:47:01.979+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:47:01.980+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:47:01.980+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:47:02.020+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:47:02.005+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dummyjson_ingestion_carts.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dummyjson_ingestion_carts.py", line 84, in <module>
+    python_callable=transform_user,
+                    ^^^^^^^^^^^^^^
+NameError: name 'transform_user' is not defined. Did you mean: 'transform_carts'?
+[2024-05-19T09:47:02.029+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:47:02.055+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.087 seconds
+[2024-05-19T09:47:15.865+0000] {processor.py:161} INFO - Started process (PID=4283) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:47:15.866+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:47:15.869+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:47:15.868+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:47:15.880+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:47:15.879+0000] {dagbag.py:334} INFO - File /opt/airflow/dags/dummyjson_ingestion_carts.py assumed to contain no DAGs. Skipping.
+[2024-05-19T09:47:15.881+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:47:15.916+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.062 seconds
+[2024-05-19T09:47:46.477+0000] {processor.py:161} INFO - Started process (PID=4358) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:47:46.482+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:47:46.493+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:47:46.485+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:47:46.523+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:47:46.523+0000] {dagbag.py:334} INFO - File /opt/airflow/dags/dummyjson_ingestion_carts.py assumed to contain no DAGs. Skipping.
+[2024-05-19T09:47:46.524+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:47:46.571+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.118 seconds
+[2024-05-19T09:48:17.003+0000] {processor.py:161} INFO - Started process (PID=4428) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:48:17.005+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:48:17.010+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:48:17.009+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:48:17.021+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:48:17.020+0000] {dagbag.py:334} INFO - File /opt/airflow/dags/dummyjson_ingestion_carts.py assumed to contain no DAGs. Skipping.
+[2024-05-19T09:48:17.022+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:48:17.055+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.067 seconds
+[2024-05-19T09:48:47.318+0000] {processor.py:161} INFO - Started process (PID=4496) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:48:47.320+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:48:47.322+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:48:47.321+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:48:47.337+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:48:47.337+0000] {dagbag.py:334} INFO - File /opt/airflow/dags/dummyjson_ingestion_carts.py assumed to contain no DAGs. Skipping.
+[2024-05-19T09:48:47.338+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:48:47.359+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.053 seconds
+[2024-05-19T09:49:17.976+0000] {processor.py:161} INFO - Started process (PID=4564) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:49:17.979+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:49:17.981+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:49:17.980+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:49:17.993+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:49:17.993+0000] {dagbag.py:334} INFO - File /opt/airflow/dags/dummyjson_ingestion_carts.py assumed to contain no DAGs. Skipping.
+[2024-05-19T09:49:17.994+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:49:18.021+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.057 seconds
+[2024-05-19T09:49:49.068+0000] {processor.py:161} INFO - Started process (PID=4632) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:49:49.070+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:49:49.073+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:49:49.072+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:49:49.088+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:49:49.087+0000] {dagbag.py:334} INFO - File /opt/airflow/dags/dummyjson_ingestion_carts.py assumed to contain no DAGs. Skipping.
+[2024-05-19T09:49:49.089+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:49:49.116+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.059 seconds
+[2024-05-19T09:50:19.275+0000] {processor.py:161} INFO - Started process (PID=4700) to work on /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:50:19.278+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dummyjson_ingestion_carts.py for tasks to queue
+[2024-05-19T09:50:19.280+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:50:19.279+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:50:19.292+0000] {logging_mixin.py:188} INFO - [2024-05-19T09:50:19.291+0000] {dagbag.py:334} INFO - File /opt/airflow/dags/dummyjson_ingestion_carts.py assumed to contain no DAGs. Skipping.
+[2024-05-19T09:50:19.292+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dummyjson_ingestion_carts.py
+[2024-05-19T09:50:19.312+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dummyjson_ingestion_carts.py took 0.049 seconds

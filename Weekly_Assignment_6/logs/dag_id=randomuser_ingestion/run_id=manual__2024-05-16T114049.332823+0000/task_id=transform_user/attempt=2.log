@@ -1,0 +1,21 @@
+[2024-05-16T11:43:07.837+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-16T11:43:07.862+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: randomuser_ingestion.transform_user manual__2024-05-16T11:40:49.332823+00:00 [queued]>
+[2024-05-16T11:43:07.872+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: randomuser_ingestion.transform_user manual__2024-05-16T11:40:49.332823+00:00 [queued]>
+[2024-05-16T11:43:07.873+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2024-05-16T11:43:07.898+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_user> on 2024-05-16 11:40:49.332823+00:00
+[2024-05-16T11:43:07.906+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1979) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-16T11:43:07.908+0000] {standard_task_runner.py:63} INFO - Started process 1981 to run task
+[2024-05-16T11:43:07.909+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'randomuser_ingestion', 'transform_user', 'manual__2024-05-16T11:40:49.332823+00:00', '--job-id', '1066', '--raw', '--subdir', 'DAGS_FOLDER/randomuser_ingestion.py', '--cfg-path', '/tmp/tmp8t0xlysx']
+[2024-05-16T11:43:07.913+0000] {standard_task_runner.py:91} INFO - Job 1066: Subtask transform_user
+[2024-05-16T11:43:07.980+0000] {task_command.py:426} INFO - Running <TaskInstance: randomuser_ingestion.transform_user manual__2024-05-16T11:40:49.332823+00:00 [running]> on host 8d1d9b6df744
+[2024-05-16T11:43:08.120+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='randomuser_ingestion' AIRFLOW_CTX_TASK_ID='transform_user' AIRFLOW_CTX_EXECUTION_DATE='2024-05-16T11:40:49.332823+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-16T11:40:49.332823+00:00'
+[2024-05-16T11:43:08.123+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-16T11:43:08.138+0000] {logging_mixin.py:188} INFO - {"results":[{"gender":"male","name":{"title":"Mr","first":"Samuel","last":"Pakkala"},"location":{"street":{"number":8766,"name":"Visiokatu"},"city":"Valkeakoski","state":"Kainuu","country":"Finland","postcode":25403,"coordinates":{"latitude":"-23.9544","longitude":"-109.0325"},"timezone":{"offset":"+4:00","description":"Abu Dhabi, Muscat, Baku, Tbilisi"}},"email":"samuel.pakkala@example.com","login":{"uuid":"da9efe22-ba30-44fe-83f1-1f295a3f0b95","username":"yellowbutterfly196","password":"coffee","salt":"ROmds96F","md5":"bac19e021e9be830758ea60188baacc2","sha1":"98f625c822ad93ae5ebeb0079281d4ee865f1fe5","sha256":"c04f04ed869bd3b32b9f9e3e422d98d9df6801ed780b7d67efcb98fc1cce6927"},"dob":{"date":"1998-05-22T13:47:42.243Z","age":25},"registered":{"date":"2004-10-14T11:33:26.152Z","age":19},"phone":"04-619-075","cell":"043-850-32-99","id":{"name":"HETU","value":"NaNNA703undefined"},"picture":{"large":"https://randomuser.me/api/portraits/men/57.jpg","medium":"https://randomuser.me/api/portraits/med/men/57.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/men/57.jpg"},"nat":"FI"}],"info":{"seed":"a687a8d62f93acb9","results":1,"page":1,"version":"1.4"}} <class 'str'>
+[2024-05-16T11:43:08.139+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-16T11:43:08.140+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-16T11:43:08.155+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=randomuser_ingestion, task_id=transform_user, run_id=manual__2024-05-16T11:40:49.332823+00:00, execution_date=20240516T114049, start_date=20240516T114307, end_date=20240516T114308
+[2024-05-16T11:43:08.203+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-16T11:43:08.232+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-16T11:43:08.235+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,23 @@
+[2024-05-19T12:09:48.079+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-19T12:09:48.104+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dummyjson_products.gcs_to_bigquery_products manual__2024-05-19T12:09:18.640156+00:00 [queued]>
+[2024-05-19T12:09:48.119+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dummyjson_products.gcs_to_bigquery_products manual__2024-05-19T12:09:18.640156+00:00 [queued]>
+[2024-05-19T12:09:48.120+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-05-19T12:09:48.138+0000] {taskinstance.py:2330} INFO - Executing <Task(GCSToBigQueryOperator): gcs_to_bigquery_products> on 2024-05-19 12:09:18.640156+00:00
+[2024-05-19T12:09:48.151+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=3684) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-19T12:09:48.153+0000] {standard_task_runner.py:63} INFO - Started process 3686 to run task
+[2024-05-19T12:09:48.153+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dummyjson_products', 'gcs_to_bigquery_products', 'manual__2024-05-19T12:09:18.640156+00:00', '--job-id', '1619', '--raw', '--subdir', 'DAGS_FOLDER/dummyjson.py', '--cfg-path', '/tmp/tmprsz52otk']
+[2024-05-19T12:09:48.156+0000] {standard_task_runner.py:91} INFO - Job 1619: Subtask gcs_to_bigquery_products
+[2024-05-19T12:09:48.226+0000] {task_command.py:426} INFO - Running <TaskInstance: dummyjson_products.gcs_to_bigquery_products manual__2024-05-19T12:09:18.640156+00:00 [running]> on host ca927d78a9ea
+[2024-05-19T12:09:48.737+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='fathurrahmanhernanda@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dummyjson_products' AIRFLOW_CTX_TASK_ID='gcs_to_bigquery_products' AIRFLOW_CTX_EXECUTION_DATE='2024-05-19T12:09:18.640156+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-19T12:09:18.640156+00:00'
+[2024-05-19T12:09:48.739+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-19T12:09:48.751+0000] {connection.py:274} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-05-19T12:09:48.757+0000] {base.py:84} INFO - Using connection ID '***GCP' for task execution.
+[2024-05-19T12:09:48.760+0000] {gcs_to_bigquery.py:380} INFO - Using existing BigQuery table for storing data...
+[2024-05-19T12:09:48.833+0000] {gcs_to_bigquery.py:384} INFO - Executing: {'load': {'autodetect': True, 'createDisposition': 'CREATE_IF_NEEDED', 'destinationTable': {'projectId': 'iconic-indexer-418610', 'datasetId': 'weekly_assignment_6', 'tableId': 'products'}, 'sourceFormat': 'CSV', 'sourceUris': ['gs://weekly-assignment-6/products.csv'], 'writeDisposition': 'WRITE_TRUNCATE', 'ignoreUnknownValues': False, 'schema': {'fields': [{'name': 'cart_id', 'type': 'INTEGER', 'mode': 'NULLABLE'}, {'name': 'total', 'type': 'FLOAT', 'mode': 'NULLABLE'}, {'name': 'discountedTotal', 'type': 'FLOAT', 'mode': 'NULLABLE'}, {'name': 'user_id', 'type': 'INTEGER', 'mode': 'NULLABLE'}, {'name': 'totalProducts', 'type': 'INTEGER', 'mode': 'NULLABLE'}, {'name': 'totalQuantity', 'type': 'INTEGER', 'mode': 'NULLABLE'}, {'name': 'products', 'type': 'STRING', 'mode': 'NULLABLE'}]}, 'skipLeadingRows': 1, 'fieldDelimiter': ',', 'quote': None, 'allowQuotedNewlines': False, 'encoding': 'UTF-8'}}
+[2024-05-19T12:09:48.835+0000] {bigquery.py:1660} INFO - Inserting job ***_dummyjson_products_gcs_to_bigquery_products_2024_05_19T12_09_18_640156_00_00_c8b4afe91a9e98ed9eb3f39c0e907be2
+[2024-05-19T12:09:52.660+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-19T12:09:52.706+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dummyjson_products, task_id=gcs_to_bigquery_products, run_id=manual__2024-05-19T12:09:18.640156+00:00, execution_date=20240519T120918, start_date=20240519T120948, end_date=20240519T120952
+[2024-05-19T12:09:52.794+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-19T12:09:52.807+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

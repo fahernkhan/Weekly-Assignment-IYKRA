@@ -1,0 +1,19 @@
+[2024-05-19T10:12:55.607+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-19T10:12:55.637+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dummyjson.transform_user scheduled__2024-05-01T00:00:00+00:00 [queued]>
+[2024-05-19T10:12:55.651+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dummyjson.transform_user scheduled__2024-05-01T00:00:00+00:00 [queued]>
+[2024-05-19T10:12:55.652+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-05-19T10:12:55.675+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_user> on 2024-05-01 00:00:00+00:00
+[2024-05-19T10:12:55.693+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1486) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-19T10:12:55.695+0000] {standard_task_runner.py:63} INFO - Started process 1493 to run task
+[2024-05-19T10:12:55.697+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dummyjson', 'transform_user', 'scheduled__2024-05-01T00:00:00+00:00', '--job-id', '1363', '--raw', '--subdir', 'DAGS_FOLDER/dummyjson.py', '--cfg-path', '/tmp/tmpfe04d1ya']
+[2024-05-19T10:12:55.700+0000] {standard_task_runner.py:91} INFO - Job 1363: Subtask transform_user
+[2024-05-19T10:12:55.811+0000] {task_command.py:426} INFO - Running <TaskInstance: dummyjson.transform_user scheduled__2024-05-01T00:00:00+00:00 [running]> on host ca927d78a9ea
+[2024-05-19T10:12:56.506+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='fathurrahmanhernanda@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dummyjson' AIRFLOW_CTX_TASK_ID='transform_user' AIRFLOW_CTX_EXECUTION_DATE='2024-05-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-05-01T00:00:00+00:00'
+[2024-05-19T10:12:56.508+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-19T10:12:56.577+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-19T10:12:56.580+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-19T10:12:56.634+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dummyjson, task_id=transform_user, run_id=scheduled__2024-05-01T00:00:00+00:00, execution_date=20240501T000000, start_date=20240519T101255, end_date=20240519T101256
+[2024-05-19T10:12:56.760+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-19T10:12:56.782+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,63 @@
+[2024-05-18T15:31:43.139+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-18T15:31:43.173+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dummyjson_ingestion.is_api_available manual__2024-05-18T15:31:39.987354+00:00 [queued]>
+[2024-05-18T15:31:43.184+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dummyjson_ingestion.is_api_available manual__2024-05-18T15:31:39.987354+00:00 [queued]>
+[2024-05-18T15:31:43.185+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-18T15:31:43.219+0000] {taskinstance.py:2330} INFO - Executing <Task(HttpSensor): is_api_available> on 2024-05-18 15:31:39.987354+00:00
+[2024-05-18T15:31:43.228+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=879) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-18T15:31:43.231+0000] {standard_task_runner.py:63} INFO - Started process 881 to run task
+[2024-05-18T15:31:43.232+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dummyjson_ingestion', 'is_api_available', 'manual__2024-05-18T15:31:39.987354+00:00', '--job-id', '1153', '--raw', '--subdir', 'DAGS_FOLDER/weekly_assignment.py', '--cfg-path', '/tmp/tmpwpay78tw']
+[2024-05-18T15:31:43.248+0000] {standard_task_runner.py:91} INFO - Job 1153: Subtask is_api_available
+[2024-05-18T15:31:43.442+0000] {task_command.py:426} INFO - Running <TaskInstance: dummyjson_ingestion.is_api_available manual__2024-05-18T15:31:39.987354+00:00 [running]> on host 8d1d9b6df744
+[2024-05-18T15:31:43.728+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dummyjson_ingestion' AIRFLOW_CTX_TASK_ID='is_api_available' AIRFLOW_CTX_EXECUTION_DATE='2024-05-18T15:31:39.987354+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-18T15:31:39.987354+00:00'
+[2024-05-18T15:31:43.731+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-18T15:31:43.732+0000] {baseoperator.py:399} WARNING - HttpSensor.execute cannot be called outside TaskInstance!
+[2024-05-18T15:31:43.733+0000] {http.py:137} INFO - Poking: /users
+[2024-05-18T15:31:43.750+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-18T15:31:43.766+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/sensors/http.py", line 164, in execute
+    super().execute(context=context)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/sensors/base.py", line 264, in execute
+    raise e
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/sensors/base.py", line 246, in execute
+    poke_return = self.poke(context)
+                  ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/sensors/http.py", line 158, in poke
+    raise exc
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/sensors/http.py", line 139, in poke
+    response = hook.run(
+               ^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/hooks/http.py", line 166, in run
+    session = self.get_conn(headers)
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/hooks/http.py", line 108, in get_conn
+    conn = self.get_connection(self.http_conn_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/hooks/base.py", line 83, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/connection.py", line 519, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `ddummyjson_api` isn't defined
+[2024-05-18T15:31:43.779+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=dummyjson_ingestion, task_id=is_api_available, run_id=manual__2024-05-18T15:31:39.987354+00:00, execution_date=20240518T153139, start_date=20240518T153143, end_date=20240518T153143
+[2024-05-18T15:31:43.799+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 1153 for task is_api_available (The conn_id `ddummyjson_api` isn't defined; 881)
+[2024-05-18T15:31:43.819+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-05-18T15:31:43.839+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/models/baseoperator.py:1296: AirflowProviderDeprecationWarning: Call to deprecated class SimpleHttpOperator. (Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.)
+  result = cls.__new__(cls)
+
+[2024-05-18T15:31:43.888+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-18T15:31:43.895+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

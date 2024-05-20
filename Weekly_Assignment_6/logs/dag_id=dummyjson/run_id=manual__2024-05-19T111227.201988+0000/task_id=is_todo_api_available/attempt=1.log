@@ -1,0 +1,22 @@
+[2024-05-19T11:12:33.426+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-19T11:12:33.497+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dummyjson.is_todo_api_available manual__2024-05-19T11:12:27.201988+00:00 [queued]>
+[2024-05-19T11:12:33.521+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dummyjson.is_todo_api_available manual__2024-05-19T11:12:27.201988+00:00 [queued]>
+[2024-05-19T11:12:33.536+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-05-19T11:12:33.594+0000] {taskinstance.py:2330} INFO - Executing <Task(HttpSensor): is_todo_api_available> on 2024-05-19 11:12:27.201988+00:00
+[2024-05-19T11:12:33.618+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=2361) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-19T11:12:33.622+0000] {standard_task_runner.py:63} INFO - Started process 2368 to run task
+[2024-05-19T11:12:33.631+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dummyjson', 'is_todo_api_available', 'manual__2024-05-19T11:12:27.201988+00:00', '--job-id', '1412', '--raw', '--subdir', 'DAGS_FOLDER/dummyjson.py', '--cfg-path', '/tmp/tmp5e66hrtu']
+[2024-05-19T11:12:33.633+0000] {standard_task_runner.py:91} INFO - Job 1412: Subtask is_todo_api_available
+[2024-05-19T11:12:33.740+0000] {task_command.py:426} INFO - Running <TaskInstance: dummyjson.is_todo_api_available manual__2024-05-19T11:12:27.201988+00:00 [running]> on host ca927d78a9ea
+[2024-05-19T11:12:34.331+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='fathurrahmanhernanda@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dummyjson' AIRFLOW_CTX_TASK_ID='is_todo_api_available' AIRFLOW_CTX_EXECUTION_DATE='2024-05-19T11:12:27.201988+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-19T11:12:27.201988+00:00'
+[2024-05-19T11:12:34.333+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-19T11:12:34.334+0000] {baseoperator.py:399} WARNING - HttpSensor.execute cannot be called outside TaskInstance!
+[2024-05-19T11:12:34.336+0000] {http.py:137} INFO - Poking: /todos/
+[2024-05-19T11:12:34.353+0000] {base.py:84} INFO - Using connection ID 'dummyjson_api' for task execution.
+[2024-05-19T11:12:36.409+0000] {base.py:294} INFO - Success criteria met. Exiting.
+[2024-05-19T11:12:36.411+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-19T11:12:36.429+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dummyjson, task_id=is_todo_api_available, run_id=manual__2024-05-19T11:12:27.201988+00:00, execution_date=20240519T111227, start_date=20240519T111233, end_date=20240519T111236
+[2024-05-19T11:12:36.538+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-19T11:12:36.555+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

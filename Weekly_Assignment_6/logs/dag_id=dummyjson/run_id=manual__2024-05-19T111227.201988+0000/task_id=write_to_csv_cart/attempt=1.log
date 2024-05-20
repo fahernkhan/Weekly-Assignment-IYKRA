@@ -1,0 +1,21 @@
+[2024-05-19T11:12:57.507+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-19T11:12:57.552+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dummyjson.write_to_csv_cart manual__2024-05-19T11:12:27.201988+00:00 [queued]>
+[2024-05-19T11:12:57.584+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dummyjson.write_to_csv_cart manual__2024-05-19T11:12:27.201988+00:00 [queued]>
+[2024-05-19T11:12:57.585+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-05-19T11:12:57.629+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): write_to_csv_cart> on 2024-05-19 11:12:27.201988+00:00
+[2024-05-19T11:12:57.645+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=2398) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-19T11:12:57.648+0000] {standard_task_runner.py:63} INFO - Started process 2406 to run task
+[2024-05-19T11:12:57.648+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dummyjson', 'write_to_csv_cart', 'manual__2024-05-19T11:12:27.201988+00:00', '--job-id', '1426', '--raw', '--subdir', 'DAGS_FOLDER/dummyjson.py', '--cfg-path', '/tmp/tmpqkn79eyi']
+[2024-05-19T11:12:57.652+0000] {standard_task_runner.py:91} INFO - Job 1426: Subtask write_to_csv_cart
+[2024-05-19T11:12:57.783+0000] {task_command.py:426} INFO - Running <TaskInstance: dummyjson.write_to_csv_cart manual__2024-05-19T11:12:27.201988+00:00 [running]> on host ca927d78a9ea
+[2024-05-19T11:12:58.437+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='fathurrahmanhernanda@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dummyjson' AIRFLOW_CTX_TASK_ID='write_to_csv_cart' AIRFLOW_CTX_EXECUTION_DATE='2024-05-19T11:12:27.201988+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-19T11:12:27.201988+00:00'
+[2024-05-19T11:12:58.438+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-19T11:12:58.476+0000] {dummyjson.py:109} INFO - CSV file has been written successfully to /opt/***/dags/playground/target/dummyjson/carts.csv.
+[2024-05-19T11:12:58.477+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-19T11:12:58.477+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-19T11:12:58.496+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dummyjson, task_id=write_to_csv_cart, run_id=manual__2024-05-19T11:12:27.201988+00:00, execution_date=20240519T111227, start_date=20240519T111257, end_date=20240519T111258
+[2024-05-19T11:12:58.554+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-19T11:12:58.601+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-19T11:12:58.606+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

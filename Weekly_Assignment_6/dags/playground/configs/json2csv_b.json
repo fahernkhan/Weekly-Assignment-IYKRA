@@ -1,0 +1,19 @@
+{
+    "dag_id": "json2csv_b",
+    "start_date": "2024-05-08",
+    "schedule": "*/5 * * * *",
+    "task_configs": [
+        {
+            "name": "customers",
+            "source_path": "/opt/airflow/dags/playground/source/database_b/customers",
+            "columns": ["id", "name", "register_date"],
+            "target_file": "/opt/airflow/dags/playground/target/dataset_b/customers.csv"
+        },
+        {
+            "name": "products",
+            "source_path": "/opt/airflow/dags/playground/source/database_b/products",
+            "columns": ["id", "name", "release_year"],
+            "target_file": "/opt/airflow/dags/playground/target/dataset_b/products.csv"
+        }
+    ]
+}
